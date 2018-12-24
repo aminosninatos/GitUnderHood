@@ -47,3 +47,8 @@ To display the file in character format, use the -c option:
 The od (stands for octal dump) command displays a file in octal (base 8) format by default.
 
 
+Compare two directories with its subdirectories
+----------------------------------------------------
+> diff -r dir1 dir2
+
+
