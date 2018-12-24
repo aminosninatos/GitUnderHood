@@ -18,3 +18,17 @@ Count command in git
 ---------------------------------
 > ls /usr/lib/git-core | wc -l
 
+
+Short-cut to the first argument
+----------------------------------
+> mkdir stuff
+> cd $_
+this will cd to the stuff directory.
+
+Adding a directory to your path
+-----------------------------------
+> PATH+=:directory-path
+for example  > PATH+=:~/bin
+to verify  > echo $PATH
+
+
