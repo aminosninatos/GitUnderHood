@@ -67,6 +67,12 @@ to get rid of empty directories
 to show  broken symlinks
 > find dir -type l -xtype l
 
+Time a command
+-------------------------------------------------------
+in linux to see how much time a command take
+> time command
+
+
 
 
 
