@@ -25,16 +25,25 @@ Short-cut to the first argument
 > cd $_
 this will cd to the stuff directory.
 
+
 Adding a directory to your path
 -----------------------------------
 > PATH+=:directory-path
 for example  > PATH+=:~/bin
 to verify  > echo $PATH
 
+
 Create a 10 lines README file
 ---------------------------------
 > for i in {1..10}; do echo this is line $i; done > README; cat README
 
 
+Count how many characters in a string
+--------------------------------------
+to see how many characters:
+> echo e5e776e88e6a77ab737dbb77ddeee6625  | wc -c
+To display the file in character format, use the -c option:
+> echo e5e776e88e6a77ab737dbb77ddeee6625  | od -c
+The od (stands for octal dump) command displays a file in octal (base 8) format by default.
 
 
