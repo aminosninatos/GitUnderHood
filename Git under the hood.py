@@ -59,3 +59,15 @@ Generate a public keys pairs
 > cat id_rsa.pub >> authorized_keys
 
 
+Size of a directory
+----------------------
+> du -sh dir
+to get rid of empty directories
+> find dir -type d -empty | xargs rmdir
+to show  broken symlinks
+> find dir -type l -xtype l
+
+
+
+
+
