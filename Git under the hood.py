@@ -31,4 +31,10 @@ Adding a directory to your path
 for example  > PATH+=:~/bin
 to verify  > echo $PATH
 
+Create a 10 lines README file
+---------------------------------
+> for i in {1..10}; do echo this is line $i; done > README; cat README
+
+
+
 
