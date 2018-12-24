@@ -52,3 +52,10 @@ Compare two directories with its subdirectories
 > diff -r dir1 dir2
 
 
+Generate a public keys pairs
+-------------------------------------
+> ssh-keygen
+> cd .ssh
+> cat id_rsa.pub >> authorized_keys
+
+
