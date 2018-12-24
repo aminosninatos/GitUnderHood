@@ -15,6 +15,6 @@ you must unpack the file outside the .git directory
 
 
 Count command in git
-----------------------------------
+---------------------------------
 > ls /usr/lib/git-core | wc -l
 
