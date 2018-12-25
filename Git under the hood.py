@@ -78,5 +78,14 @@ Packages count
 > apt-get cache search . | wc -l
 
 
+Pushd, popd & cd commands
+------------------------
+> pushd dir : move to dir but save in the stack the directory i came form
+> popd  : move back to the saved directory
+> cd -  : move to the last directory you were in
+
+
+
+
 
 
