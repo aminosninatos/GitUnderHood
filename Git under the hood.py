@@ -73,6 +73,9 @@ in linux to see how much time a command take
 > time command
 
 
+Packages count
+-----------------
+> apt-get cache search . | wc -l
 
 
 
