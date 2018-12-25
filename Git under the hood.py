@@ -80,12 +80,13 @@ Packages count
 
 Pushd, popd & cd commands
 ------------------------
-> pushd dir : move to dir but save in the stack the directory i came form
+> pushd dir : move to dir but save in the stack the directory i came from
 > popd  : move back to the saved directory
 > cd -  : move to the last directory you were in
 
-
-
+Counting the source lines of code in a directory
+---------------------------------------------------
+> sloccount dir 
 
 
 
