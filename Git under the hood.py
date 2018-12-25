@@ -74,19 +74,23 @@ in linux to see how much time a command take
 
 
 Packages count
------------------
+---------------------------------------
 > apt-get cache search . | wc -l
 
 
 Pushd, popd & cd commands
-------------------------
+-----------------------------------------------------------------------------------
 > pushd dir : move to dir but save in the stack the directory i came from
 > popd  : move back to the saved directory
 > cd -  : move to the last directory you were in
 
 Counting the source lines of code in a directory
----------------------------------------------------
+--------------------------------------------------------------
 > sloccount dir 
+
+Showing refs
+-----------------------
+> git show-ref
 
 
 
