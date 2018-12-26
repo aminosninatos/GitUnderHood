@@ -92,5 +92,15 @@ Showing refs
 -----------------------
 > git show-ref
 
+Git files
+--------------------------------------------------
+> git cat-file -t  filename or hash
+to get the type of  the object : blob(data), tree, commit & tag
+> git cat-file -p  filename or hash
+to print it 
+
+
+
+
 
 
