@@ -93,14 +93,21 @@ Showing refs
 > git show-ref
 
 Git files
---------------------------------------------------
+--------------------------------------------------------------------
 > git cat-file -t  filename or hash
 to get the type of  the object : blob(data), tree, commit & tag
 > git cat-file -p  filename or hash
 to print it 
 
 
+Sed command
+------------------------------------------------------------------------
+> sed 's/string1/string2/g' filename
+to  change any occurence of the string1 to string2
+s: substitute   g: global
 
+> sed '/string/d' filename
+delete any line that contains part of whole string
 
-
-
+> sed -i '/string/d' filename
+-i : if you want to change modifications directly to the file
