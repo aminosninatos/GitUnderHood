@@ -130,7 +130,7 @@ delete any line that contains part of whole string
 
 
 Staged files or Index or cache
------------------------------------------------------
+----------------------------------------------------
 > git ls-files --stage
 to see what is in the index = staging area = cache
 
