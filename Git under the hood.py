@@ -101,13 +101,42 @@ to print it
 
 
 Sed command
-------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 > sed 's/string1/string2/g' filename
-to  change any occurence of the string1 to string2
+to  change any occurence of the string1 to string2 even if string1 is part of word
 s: substitute   g: global
+
+> sed 's/\bstring1\b/string2/g' filename
+to  change the exact match only of the string1 to string2
+b: boundaries
+
+> sed 's/^string1/string2/g' filename
+to  change any line that begins with string1 to string2
+^: beginning of the line
+
+> sed 's/string1$/string2/g' filename
+to  change any line that ends with string1 to string2
+$: end of the line
+
+> sed 's/[0-9]/(&)/g' filename
+to  change any numeric to (numeric)
+[0-9]: all numerical characters &: matched string
 
 > sed '/string/d' filename
 delete any line that contains part of whole string
 
 > sed -i '/string/d' filename
--i : if you want to change modifications directly to the file
+-i: if you want to change modifications directly to the file
+
+
+Staged files or Index or cache
+-----------------------------------------------------
+> git ls-files --stage
+to see what is in the index = staging area = cache
+
+
+
+
+
+
+
