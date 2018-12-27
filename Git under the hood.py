@@ -20,26 +20,26 @@ Count command in git
 
 
 Short-cut to the first argument
-----------------------------------
+-----------------------------------------
 > mkdir stuff
 > cd $_
 this will cd to the stuff directory.
 
 
 Adding a directory to your path
------------------------------------
+---------------------------------------------
 > PATH+=:directory-path
 for example  > PATH+=:~/bin
 to verify  > echo $PATH
 
 
 Create a 10 lines README file
----------------------------------
+---------------------------------------------------------------------------------
 > for i in {1..10}; do echo this is line $i; done > README; cat README
 
 
 Count how many characters in a string
---------------------------------------
+------------------------------------------------------
 to see how many characters:
 > echo e5e776e88e6a77ab737dbb77ddeee6625  | wc -c
 To display the file in character format, use the -c option:
@@ -48,7 +48,7 @@ The od (stands for octal dump) command displays a file in octal (base 8) format 
 
 
 Compare two directories with its subdirectories
-----------------------------------------------------
+-------------------------------------------------------------
 > diff -r dir1 dir2
 
 
@@ -60,7 +60,7 @@ Generate a public keys pairs
 
 
 Size of a directory
-----------------------
+-------------------------------------------------
 > du -sh dir
 to get rid of empty directories
 > find dir -type d -empty | xargs rmdir
@@ -93,7 +93,7 @@ Showing refs
 > git show-ref
 
 Git files
---------------------------------------------------------------------
+-----------------------------------------------------------------------
 > git cat-file -t  filename or hash
 to get the type of  the object : blob(data), tree, commit & tag
 > git cat-file -p  filename or hash
@@ -101,7 +101,7 @@ to print it
 
 
 Sed command
-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 > sed 's/string1/string2/g' filename
 to  change any occurence of the string1 to string2 even if string1 is part of word
 s: substitute   g: global
@@ -130,13 +130,26 @@ delete any line that contains part of whole string
 
 
 Staged files or Index or cache
-----------------------------------------------------
+-------------------------------------------------------------
 > git ls-files --stage
 to see what is in the index = staging area = cache
 
 
+Create two file  using {}
+------------------------------------------------------------------------------
+> touch ignored-by-{gitignore,exclude}
+this will create 2 files :  ignored-by-gitignore &  ignored-by-exclude
 
 
-
-
+.Git directory structure
+-------------------------------------------------------------------------------------------------------------------------
+COMMIT_EDITMSG : last commit message
+config : local configuration information
+description : it s used by other programs its just a comment
+HEAD : the last thing that you check up
+/hooks : programs you run automatically when you execute some commands, you have to remove .sample
+index : the stageing area
+info/exclude : patterns that git ignores
+logs/ : keeps history
+refs/ : sha1 simple names for sha1 or ascii file 
 
