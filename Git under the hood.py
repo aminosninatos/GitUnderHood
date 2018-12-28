@@ -135,8 +135,22 @@ Staged files or Index or cache
 to see what is in the index = staging area = cache
 
 
+AWK command line
+---------------------------------------------------------------
+Awk assigns some variables for each data field found:
+$0 for the whole line.
+$1 for the first field.
+$2 for the second field.
+$n for the nth field.
+> awk '{print $1}' myfile    : displays the first field
+you can specify the separator using -F option:
+> awk -F: '{print $1}' /etc/passwd    in this case separator = ":"
 
+To run multiple commands, separate them with a semicolon like this:
+> echo "Hello Tom" | awk '{$2="Adam"; print $0}'   this displays "Hello Adam"
 
+If you need to create a title & a footer for your result:
+> awk 'BEGIN {print "The File Contents:"}; {print $0}; END {print "File footer"}' myfile
 
 
 
