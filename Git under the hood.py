@@ -136,7 +136,7 @@ to see what is in the index = staging area = cache
 
 
 AWK command line
----------------------------------------------------------------
+---------------------------------------------------------------------------------------
 Awk assigns some variables for each data field found:
 $0 for the whole line.
 $1 for the first field.
@@ -151,6 +151,15 @@ To run multiple commands, separate them with a semicolon like this:
 
 If you need to create a title & a footer for your result:
 > awk 'BEGIN {print "The File Contents:"}; {print $0}; END {print "File footer"}' myfile
+
+> awk '/string/' filename
+to get all the lines that contain the occurence of string
+
+> awk '/^[0-9]/' filename
+to get all the lines that start with a number
+
+> awk '{if ($1 ~ /[1-3]/) print }' filename
+if the first column contains 1 or 2 or 3 print the line
 
 
 Create two file  using {}
