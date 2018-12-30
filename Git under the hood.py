@@ -136,7 +136,10 @@ to see what is in the index = staging area = cache
 
 
 AWK command line
----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+The basic format of an awk command looks like this:
+> awk 'pattern {action}' input-file > output-file
+
 Awk assigns some variables for each data field found:
 $0 for the whole line.
 $1 for the first field.
@@ -160,6 +163,17 @@ to get all the lines that start with a number
 
 > awk '{if ($1 ~ /[1-3]/) print }' filename
 if the first column contains 1 or 2 or 3 print the line
+
+> awk '$7=="7.30" { print $3 }' input-file
+The list of statements inside the curly brackets ('{','}') is called a block. 
+If you put a conditional expression in front of a block, the statement inside the block will be 
+executed  only if the condition is true
+
+> awk 'match($7,/tux/" { print $3 }' input-file
+if column 7 matches the word tux print column 3
+
+> awk 'BEGIN { print "Log access to webserver" } {ip[$1]++} END{ for (i in ip) print i, "acceed: ", ip[i] , " times" }' input-file
+this will print how many times an ip address in column 1 has accessed the webserver
 
 
 Create two file  using {}
