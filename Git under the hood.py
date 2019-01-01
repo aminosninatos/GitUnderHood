@@ -200,4 +200,17 @@ Characters count
 if you use echo then it will add another character which is the new line character
 
 
+Octal dump
+----------------------------------------------------------------
+> od filename
+to dump a file in octal format
+> od -c filename
+to dump a file in  character format
+> od -x filename
+to dump a file in hexadecimal format
+> od  -xc filename
+to dump a file in hexadecimal & character format
+
+
+
 
