@@ -194,3 +194,10 @@ info/exclude : patterns that git ignores
 logs/ : keeps history
 refs/ : sha1 simple names for sha1 or ascii file 
 
+Characters count
+------------------------------------------------------------------------------------------------
+> echo hash  | wc -c
+if you use echo then it will add another character which is the new line character
+
+
+
