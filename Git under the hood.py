@@ -222,6 +222,20 @@ prints the fisrt 5 lines
 prints the first 20 bytes
 
 
+Tail command
+---------------------------------------------------------------------
+like the head command but it prints the last 10 lines by default
+you can use it with the same options as head command
+> tail -f filename
+in order to monitor changes of a file in real time
+
+
+
+
+
+
+
+
 
 
 
