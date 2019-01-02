@@ -230,8 +230,14 @@ you can use it with the same options as head command
 in order to monitor changes of a file in real time
 
 
-
-
+Inode
+------------------------------------------------------------
+> ls -i filename
+shows the inode number of a file or directory
+> ln file1 file2
+both files will have the same inode number
+> ls -d  directory
+shows directory entries instead of contents
 
 
 
