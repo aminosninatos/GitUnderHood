@@ -212,5 +212,22 @@ to dump a file in hexadecimal format
 to dump a file in hexadecimal & character format
 
 
+Head command
+----------------------------------------------------
+> head filename
+by default it returns the first 10 lines of a file
+> head -n 5 filename
+prints the fisrt 5 lines
+> head -c 20 filename
+prints the first 20 bytes
+
+
+
+
+
+
+
+
+
 
 
