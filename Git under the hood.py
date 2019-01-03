@@ -257,6 +257,16 @@ Clone a repo locally
 creates a repo locally called bare repo
 
 
+Xargs command
+-------------------------------------------------------------------------------------------------------
+it takes output of a command and passes it as argument of another command
+> echo 'one two three' | xargs mkdir
+will create 3 directories one, two and three.
+The most common usage of xargs is to use it with the find command:
+> find /tmp -mtime +14 | xargs rm
+
+
+
 
 
 
