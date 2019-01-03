@@ -1,6 +1,12 @@
 Git under the hood
 -----------------------
 
+Git gc
+---------------------------------------------------------------------------------------------------
+> git gc
+garbage collect, cleanup unnecessary files and compressing objects to create .pack files
+
+
 Verify a pack
 -----------------------------------------------------
 > git verify-pack -v filename.pack
