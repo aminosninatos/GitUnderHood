@@ -240,7 +240,15 @@ both files will have the same inode number
 shows directory entries instead of contents
 
 
-
+Remove command
+----------------------------------------------------------------------------
+by default rm only removes files not directories
+> rm -r
+to remove a directory recursevly including its contents
+> rm -f file
+force to remove a file or directory without prompting for confirmation
+> rm -rv directory
+to show information while deleting
 
 
 
