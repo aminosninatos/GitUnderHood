@@ -251,6 +251,17 @@ force to remove a file or directory without prompting for confirmation
 to show information while deleting
 
 
+Clone a repo locally
+------------------------------------------------
+> git clone --bare  path_repo_name
+creates a repo locally called bare repo
+
+
+
+
+
+
+
 
 
 
