@@ -264,7 +264,7 @@ creates a repo locally called bare repo
 
 
 Xargs command
--------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------
 it takes output of a command and passes it as argument of another command
 > echo 'one two three' | xargs mkdir
 will create 3 directories one, two and three.
@@ -272,7 +272,15 @@ The most common usage of xargs is to use it with the find command:
 > find /tmp -mtime +14 | xargs rm
 
 
-
+Find command
+---------------------------------------------------------------------------------------------------
+find [where to start searching from] [expression determines what to find] [-options] [what to find].
+> find . -name filename
+searches the current directory for a file with a specific name.
+> find . -empty
+searches the current directory for empty files and folders.
+> find / -name .DS_Store -delete
+is equivalent to : > find / -name ".DS_Store"  -exec rm {} \;
 
 
 
