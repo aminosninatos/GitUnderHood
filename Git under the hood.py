@@ -281,7 +281,8 @@ searches the current directory for a file with a specific name.
 searches the current directory for empty files and folders.
 > find / -name .DS_Store -delete
 is equivalent to : > find / -name ".DS_Store"  -exec rm {} \;
-
+> find / -type f
+displays only filenames in the / directory
 
 
 
