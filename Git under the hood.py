@@ -285,6 +285,11 @@ is equivalent to : > find / -name ".DS_Store"  -exec rm {} \;
 displays only filenames in the / directory
 
 
+Create multiple directories
+----------------------------------------------------
+> for i in dir1 dir2 dir3; do mkdir $i; done
+
+
 
 
 
