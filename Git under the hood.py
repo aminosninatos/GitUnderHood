@@ -290,7 +290,12 @@ Create multiple directories
 > for i in dir1 dir2 dir3; do mkdir $i; done
 
 
-
+echo
+--------------------------------------------------------------------------------------------
+> echo "something" >> file
+will append something to the end of the file
+> echo "something" > file
+everything already present in the file would have been replaced by something 
 
 
 
