@@ -290,7 +290,7 @@ Create multiple directories
 > for i in dir1 dir2 dir3; do mkdir $i; done
 
 
-echo
+Echo
 --------------------------------------------------------------------------------------------
 > echo "something" >> file
 will append something to the end of the file
@@ -298,7 +298,13 @@ will append something to the end of the file
 everything already present in the file would have been replaced by something 
 
 
-
+Copy command
+------------------------------------------------------------------------------------------
+> cp -a dir1 dir2
+-a means 3 things:
+1.preserve timestamps, permissions, group, user (if you're running as root).
+2.preserves symbolic links (no dereference).
+3.recursive copy.
 
 
 
