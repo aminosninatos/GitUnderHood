@@ -307,6 +307,17 @@ Copy command
 3.recursive copy.
 
 
+Bash script
+--------------------------------------------------------------------------------------------------------------------------------------
+>#/bin/bash -eu
+the -e option means "if any pipeline ever ends with a non-zero ('error') exit status, terminate the script immediately".
+the -u option means warn for typos in bash variables.
+>dir=${1:sctarch}
+sets the variable dir  to be either something giving in the command line or by default the string "scratch".
+>[[ -d $dir]]  &&  rm -rf $dir
+[[ is bash's improvement to the [ it lets you use && and || operators for boolean tests
+-d to test if a directory exists.
+&& lets you do something based on whether the previous command completed successfully.
 
 
 
