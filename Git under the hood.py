@@ -320,5 +320,17 @@ sets the variable dir  to be either something giving in the command line or by d
 && lets you do something based on whether the previous command completed successfully.
 
 
+Shopt
+-----------------------------------------------------------------------------------------------------------------------------------------
+is a shell builtin command to set and unset (remove) various Bash shell options.
+-s :  to set or enable the option
+-u : yo unset or disable the option
+> shopt -s globstar
+the pattern ‘**’ used in a filename expansion context will match a files and zero or more directories and subdirectories. 
+If the pattern is followed by a ‘/’, only directories and subdirectories match.
+
+
+
+
 
 
