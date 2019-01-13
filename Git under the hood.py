@@ -336,4 +336,11 @@ File command
 lets you determine the actual file type.
 
 
+Git hash-object
+-------------------------------------------
+> git hash-object object_name
+to get the SHA-1 hash for files.
 
+
+
+ 
