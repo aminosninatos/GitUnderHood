@@ -330,7 +330,10 @@ the pattern ‘**’ used in a filename expansion context will match a files and
 If the pattern is followed by a ‘/’, only directories and subdirectories match.
 
 
-
+File command
+--------------------------------------------------
+>file filename
+lets you determine the actual file type.
 
 
 
