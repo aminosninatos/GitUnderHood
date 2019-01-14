@@ -353,4 +353,14 @@ Find empty directories
 fgrep  is equivlent to grep -F  searches a file with a fixed pattern
 fgrep -v  to select not matching .git directory
 
+Here document
+----------------------------------------------------------------------------------------------------------------
+> cat << EOF > filename
+'EOF' is the limiting string, anything entered to the stdin will be writing to the file until the word 'EOF'
+
+
+
+
+
+
 
