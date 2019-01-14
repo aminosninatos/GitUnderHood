@@ -342,5 +342,9 @@ Git hash-object
 to get the SHA-1 hash for files.
 
 
+.Gitkeep
+-----------------------------------------------------------------------------------------------------------------
+to allow en empty directory to be tracked with git you must add .gitkeep file to this empty directory.
 
- 
+
+
