@@ -347,4 +347,10 @@ to get the SHA-1 hash for files.
 to allow en empty directory to be tracked with git you must add .gitkeep file to this empty directory.
 
 
+Find empty directories
+--------------------------------------------------------------------------------
+> find . -type d -empty | fgrep -v .git
+fgrep  is equivlent to grep -F  searches a file with a fixed pattern
+fgrep -v  to select not matching .git directory
+
 
