@@ -27,3 +27,10 @@ but usually not a problem that strace stderr and the programs stderr are mixed.
 so you should redirect strace stderr to stdout to be able to pipe it:
 # sudo strace -p $(pgrep apache2) 2>&1 | grep open
 
+Bash -x
+-----------------------------------------------------------------
+# bash -x script
+if you want your script to show every line before executing it.
+
+
+
