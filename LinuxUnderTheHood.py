@@ -3,7 +3,7 @@ Linux under the hood
 
 Loaded libs
 -----------------------------------------------------
-# ldd program_file
+> ldd program_file
 to see the libraries that the program calls
 
 User space vs Kernel space
@@ -23,3 +23,8 @@ Signals
 -----------------------------------------------------------------------------------------------------
 provides a software interrupt its a method to tell a process that it has to do something
 
+Master Boot Record
+------------------------------------------------------------------------------------------------
+> xxd -l 512 /dev/sda
+to see the fisrt 512 bytes of the disk, we use the xxd which is a hexadecimal viewer
+55aa is the magic code which couclude the mbr.
