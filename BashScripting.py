@@ -32,5 +32,17 @@ Bash -x
 # bash -x script
 if you want your script to show every line before executing it.
 
+Variable Shell and SubShell
+-------------------------------------------------------------------------------------------------------------------
+a subshell is created whenever you execute a script.
+a variable is oonly effective in the shell  when it was defined.
+we use EXPORT to make it also available in subshells.
+/etc/profile is processed when OPENING a LOGIN SHELL-user specific version is on ~/.bash_profile.
+/etc/bashrc  is processed when OPENING a SUBSHELL -user specific version is on ~/.bashrc.
+
+Sourcing
+-------------------------------------------------------------------------------
+the content of one script can be included in another script.
+we use the "source" command or the "." command to source a script.
 
 
