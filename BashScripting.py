@@ -45,4 +45,24 @@ Sourcing
 the content of one script can be included in another script.
 we use the "source" command or the "." command to source a script.
 
+Arguments
+-----------------------------------------------------------------
+"$0" refers to the name of the script itself.
+"$1" "$2" $... refer to the first second .... argument.
+"$@" refers to all arguments provided one by one.
+"$#" refers to the count of arguments.
+"$*" refers to a single string that contains all arguments.
+
+Command substitution
+------------------------------------------------------------------------------
+allows using the result of a command in a script by using the "$" sign.
+> ls -l $(which passwd)
+
+
+
+
+
+
+
+
 
