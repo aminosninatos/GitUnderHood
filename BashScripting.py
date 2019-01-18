@@ -58,8 +58,11 @@ Command substitution
 allows using the result of a command in a script by using the "$" sign.
 > ls -l $(which passwd)
 
-
-
+substitution operator
+-----------------------------------------------------------------------------------
+${VAR:-word} if $var exists, use its value if not return the value "word".
+${VAR:=word} if $var exists, use its value if not set the default value to "word".
+${VAR:?message} if $var exists, use its value if not display var followed by a message.
 
 
 
