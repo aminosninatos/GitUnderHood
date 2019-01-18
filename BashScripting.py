@@ -10,13 +10,13 @@ here '#' is not a comment in this case
 
 Exit status
 -------------------------------------------
-# echo $? 
+> echo $? 
 to get the exit status of the last command
 
 Path variable
 -------------------------------------------------------------------------
 on linux the current directory is not in the $PATH so to execute a script
-# ./myscript
+> ./myscript
 
 
 2>&1  expression
@@ -25,11 +25,11 @@ strace prints its traces on standard error, not on standard output.
 thats because its common to want to redirect the standard output of the program.
 but usually not a problem that strace stderr and the programs stderr are mixed.
 so you should redirect strace stderr to stdout to be able to pipe it:
-# sudo strace -p $(pgrep apache2) 2>&1 | grep open
+> sudo strace -p $(pgrep apache2) 2>&1 | grep open
 
 Bash -x
 -----------------------------------------------------------------
-# bash -x script
+> bash -x script
 if you want your script to show every line before executing it.
 
 Variable Shell and SubShell
@@ -63,6 +63,14 @@ substitution operator
 ${VAR:-word} if $var exists, use its value if not return the value "word".
 ${VAR:=word} if $var exists, use its value if not set the default value to "word".
 ${VAR:?message} if $var exists, use its value if not display var followed by a message.
+
+Pattern matching
+-----------------------------------------------------------------------------------------------------------------
+is used to remove patterns from a variable.
+"${VAR#pattern}" search the pattern of the variable value & delete the shortest part that matches.
+"${VAR##pattern}" search the pattern of the variable value & delete the longest part that matches.
+"${VAR%pattern}" if the pattern matches the end of the variable value then delete the shortest part that matches.
+"${VAR%%pattern}" if the pattern matches the end of the variable value then delete the longest part that matches.
 
 
 
