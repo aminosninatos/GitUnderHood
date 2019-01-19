@@ -1,15 +1,15 @@
 Linux under the hood
-
+------------------------
 
 Loaded libs
------------------------------------------------------
+---------------------------------------------
 > ldd program_file
 to see the libraries that the program calls
 
 User space vs Kernel space
-----------------------------------------------------------------------------------------
-hardware access in restricted only to the kernel
-kernel provides system calls for users and processes to access hardware
+-------------------------------------------------------------------------
+hardware access is restricted only to the kernel
+kernel provides system calls for users & processes to access hardware
 user space is memory that is allocated by the kernel for user processes
 
 Strace & Ltrace
