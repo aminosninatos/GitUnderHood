@@ -72,8 +72,16 @@ is used to remove patterns from a variable.
 "${VAR%pattern}" if the pattern matches the end of the variable value then delete the shortest part that matches.
 "${VAR%%pattern}" if the pattern matches the end of the variable value then delete the longest part that matches.
 
+Grep
+--------------------------------------------------------
+> grep -v  exclude lines that match the pattern.
+> grep -r  recursive that searches also subdirectories.
 
-
+3 ways to test
+-------------------------------------------------------------
+test -z $1  old method, using internal bash command.
+[-z $1]     equivalent to test.
+[[-z $1]]   new improved version that has "||" "&&" build in.  
 
 
 
