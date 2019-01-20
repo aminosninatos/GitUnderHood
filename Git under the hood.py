@@ -2,9 +2,9 @@ Git under the hood
 -----------------------
 
 Git gc
----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 > git gc
-garbage collect, cleanup unnecessary files and compressing objects to create .pack files
+garbage collect, cleanup unnecessary files and compressing objects to create .pack files.
 
 
 Verify a pack
@@ -17,35 +17,35 @@ to get just the first filed :
 Unpack a file
 -----------------------------------------------------
 > git unpack-objects filename.pack
-you must unpack the file outside the .git directory
+you must unpack the file outside the .git directory.
 
 
-Count command in git
----------------------------------
+Count number of git commands
+--------------------------------
 > ls /usr/lib/git-core | wc -l
 
 
-Short-cut to the first argument
------------------------------------------
+Short-cut to the first argument of last command
+-------------------------------------------------
 > mkdir stuff
 > cd $_
 this will cd to the stuff directory.
 
 
 Adding a directory to your path
----------------------------------------------
+---------------------------------
 > PATH+=:directory-path
 for example  > PATH+=:~/bin
 to verify  > echo $PATH
 
 
 Create a 10 lines README file
----------------------------------------------------------------------------------
+------------------------------------------------------------------------
 > for i in {1..10}; do echo this is line $i; done > README; cat README
 
 
 Count how many characters in a string
-------------------------------------------------------
+------------------------------------------------------------------------------------------
 to see how many characters:
 > echo e5e776e88e6a77ab737dbb77ddeee6625  | wc -c
 To display the file in character format, use the -c option:
@@ -54,7 +54,7 @@ The od (stands for octal dump) command displays a file in octal (base 8) format 
 
 
 Compare two directories with its subdirectories
--------------------------------------------------------------
+-------------------------------------------------
 > diff -r dir1 dir2
 
 
@@ -74,40 +74,40 @@ to show  broken symlinks
 > find dir -type l -xtype l
 
 Time a command
--------------------------------------------------------
-in linux to see how much time a command take
+---------------------------------------------------------
+in linux to see how much time a command take to execute
 > time command
 
 
 Packages count
----------------------------------------
+----------------------------------
 > apt-get cache search . | wc -l
 
 
 Pushd, popd & cd commands
------------------------------------------------------------------------------------
-> pushd dir : move to dir but save in the stack the directory i came from
-> popd  : move back to the saved directory
-> cd -  : move to the last directory you were in
+----------------------------------------------------------------------------
+> pushd dir : move to dir but save in the stack the directory you came from.
+> popd  : move back to the saved directory.
+> cd -  : move to the last directory you were in.
 
 Counting the source lines of code in a directory
---------------------------------------------------------------
+--------------------------------------------------
 > sloccount dir 
 
 Showing refs
------------------------
+---------------
 > git show-ref
 
 Git files
 -----------------------------------------------------------------------
 > git cat-file -t  filename or hash
-to get the type of  the object : blob(data), tree, commit & tag
+to get the type of  the object : blob(data), tree, commit & tag.
 > git cat-file -p  filename or hash
-to print it 
+to print it. 
 
 
 Sed command
----------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 > sed 's/string1/string2/g' filename
 to  change any occurence of the string1 to string2 even if string1 is part of word
 s: substitute   g: global
@@ -136,7 +136,7 @@ delete any line that contains part of whole string
 
 
 Staged files or Index or cache
--------------------------------------------------------------
+-----------------------------------------------------
 > git ls-files --stage
 to see what is in the index = staging area = cache
 
@@ -201,66 +201,66 @@ logs/ : keeps history
 refs/ : sha1 simple names for sha1 or ascii file 
 
 Characters count
-------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 > echo hash  | wc -c
-if you use echo then it will add another character which is the new line character
+if you use echo then it will add another character which is the new line character.
 
 
 Octal dump
 ----------------------------------------------------------------
 > od filename
-to dump a file in octal format
+to dump a file in octal format.
 > od -c filename
-to dump a file in  character format
+to dump a file in  character format.
 > od -x filename
-to dump a file in hexadecimal format
+to dump a file in hexadecimal format.
 > od  -xc filename
-to dump a file in hexadecimal & character format
+to dump a file in hexadecimal & character format.
 
 
 Head command
 ----------------------------------------------------
 > head filename
-by default it returns the first 10 lines of a file
+by default it returns the first 10 lines of a file.
 > head -n 5 filename
-prints the fisrt 5 lines
+prints the fisrt 5 lines.
 > head -c 20 filename
-prints the first 20 bytes
+prints the first 20 bytes.
 
 
 Tail command
----------------------------------------------------------------------
-like the head command but it prints the last 10 lines by default
-you can use it with the same options as head command
+------------------------------------------------------------------
+like the head command but it prints the last 10 lines by default.
+you can use it with the same options as head command.
 > tail -f filename
-in order to monitor changes of a file in real time
+in order to monitor changes of a file in real time.
 
 
 Inode
 ------------------------------------------------------------
 > ls -i filename
-shows the inode number of a file or directory
+shows the inode number of a file or directory.
 > ln file1 file2
-both files will have the same inode number
+both files will have the same inode number.
 > ls -d  directory
-shows directory entries instead of contents
+shows directory entries instead of contents.
 
 
 Remove command
-----------------------------------------------------------------------------
+-------------------------------------------------------------------------
 by default rm only removes files not directories
 > rm -r
-to remove a directory recursevly including its contents
+to remove a directory recursevly including its contents.
 > rm -f file
-force to remove a file or directory without prompting for confirmation
+force to remove a file or directory without prompting for confirmation.
 > rm -rv directory
-to show information while deleting
+to show information while deleting.
 
 
 Clone a repo locally
-------------------------------------------------
+------------------------------------------
 > git clone --bare  path_repo_name
-creates a repo locally called bare repo
+creates a repo locally called bare repo.
 
 
 Xargs command
@@ -290,19 +290,19 @@ Create multiple directories
 > for i in dir1 dir2 dir3; do mkdir $i; done
 
 
-Echo
---------------------------------------------------------------------------------------------
+Echo command
+--------------------------------------------------------------------------------
 > echo "something" >> file
-will append something to the end of the file
+will append something to the end of the file.
 > echo "something" > file
-everything already present in the file would have been replaced by something 
+everything already present in the file would have been replaced by something. 
 
 
 Copy command
-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 > cp -a dir1 dir2
 -a means 3 things:
-1.preserve timestamps, permissions, group, user (if you're running as root).
+1.preserve timestamps, permissions, group, user (if you re running as root).
 2.preserves symbolic links (no dereference).
 3.recursive copy.
 
@@ -310,14 +310,15 @@ Copy command
 Bash script
 --------------------------------------------------------------------------------------------------------------------------------------
 >#/bin/bash -eu
+
 the -e option means "if any pipeline ever ends with a non-zero ('error') exit status, terminate the script immediately".
 the -u option means warn for typos in bash variables.
 >dir=${1:sctarch}
 sets the variable dir  to be either something giving in the command line or by default the string "scratch".
 >[[ -d $dir]]  &&  rm -rf $dir
-[[ is bash's improvement to the [ it lets you use && and || operators for boolean tests
+[[ is bash s improvement to the [ it lets you use && and || operators to test booleans.
 -d to test if a directory exists.
-&& lets you do something based on whether the previous command completed successfully.
+"&&" lets you do something based on whether the previous command completed successfully.
 
 
 Shopt
@@ -339,24 +340,25 @@ lets you determine the actual file type.
 Git hash-object
 -------------------------------------------
 > git hash-object object_name
-to get the SHA-1 hash for files.
+to get the SHA-1 hash of files.
 
 
 .Gitkeep
------------------------------------------------------------------------------------------------------------------
-to allow en empty directory to be tracked with git you must add .gitkeep file to this empty directory.
+------------------------------------------------------------------------------------------------------
+to allow en empty directory to be tracked by git you must add .gitkeep file to this empty directory.
 
 
 Find empty directories
 --------------------------------------------------------------------------------
 > find . -type d -empty | fgrep -v .git
-fgrep  is equivlent to grep -F  searches a file with a fixed pattern
-fgrep -v  to select not matching .git directory
+fgrep is equivlent to grep -F  searches a file using a fixed pattern.
+fgrep -v  to select not matching .git directory.
+
 
 Here document
 ----------------------------------------------------------------------------------------------------------------
 > cat << EOF > filename
-'EOF' is the limiting string, anything entered to the stdin will be writing to the file until the word 'EOF'
+'EOF' is the limiting string, anything entered to the stdin will be writing to the file until the word 'EOF'.
 
 
 
