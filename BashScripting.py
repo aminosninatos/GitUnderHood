@@ -101,9 +101,32 @@ case $VAR in
     command3;;
  esac
 
+Array
+----------------------------------------------------------
+an array is a string variable that holds multiple values.
+array_name=(x1 x2 x3)
+echo ${array_name[0]} first value of the array.
+echo ${array_name[@]}  all array values.
+echo '${#array_name[@]}' number of array values.
+
+Test command
+------------------------------------------------------------
+if you want see what does any argument mean in a [-z $VAR] 
+you can look at "man test" command.
 
 
-   
+Menu interface
+----------------------------------------------
+the select statment is used to create a menu.   
+select VAR in X1 X2 X3
+notice the use of break in select.
+
+Trap
+------------------------------------------------------------
+is used to redefine a signal for example to disallow Ctrl+C.
+
+
+
 
 
 
