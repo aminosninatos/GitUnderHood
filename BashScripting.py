@@ -83,5 +83,35 @@ test -z $1  old method, using internal bash command.
 [-z $1]     equivalent to test.
 [[-z $1]]   new improved version that has "||" "&&" build in.  
 
+Using "&&" and "||"
+---------------------------------------------------------------------------------------------------------------------
+"&&" and "||" are the logical AND and OR.
+when using "&&" the second command is only executed when the first expression retuns exit code 0(successful).
+when using "||" the second command is only executed when the first expression does not return exit 0(Not successful).
+
+Using case
+----------------------------------------------
+case is used if specific values are expected
+case $VAR in
+	var1)
+    command1;;
+    var2)
+    command2;;
+    *)
+    command3;;
+ esac
+
+
+
+   
+
+
+
+
+
+
+
+
+
 
 
