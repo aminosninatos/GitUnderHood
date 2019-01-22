@@ -126,9 +126,20 @@ Trap
 is used to redefine a signal for example to disallow Ctrl+C.
 
 
+Declaring variables
+---------------------------------------
+is not required but can be useful.
+declare -r var (readonly)
+declare -i var (number)
+declare -a var (array)
+declare -f function_name (function)
+declare -x var (export)
 
 
-
+list all files
+-------------------------------------------
+for i in *;do echo $i;done
+* means all files in the current directory.
 
 
 
