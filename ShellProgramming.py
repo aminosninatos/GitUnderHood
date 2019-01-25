@@ -145,9 +145,8 @@ When you run a command that gives you prompts and lets you edit what you type, c
 Part 3
 -----------
 Another piece of command-line programming that isnt quite "in-model" is # .
-Try this:
 
-At a prompt (that is, in "insert mode"), type this command, but do not press ENTER:
+Try this: At a prompt (that is, in "insert mode"), type this command, but do not press ENTER:
 
 for i in {0..7}; do echo $i; done
 
@@ -159,9 +158,10 @@ Bash sticks a "#" symbol at the beginning of the line! Press ENTER and you get a
 
 The pound command, in vi-command-mode, instantly turns the line into a comment.  Pressing ENTER puts that commented line into your command history.
 
-Try this:
-Recall your last command (how you do this should now be in your firmware).  Its that comment.
+Try this: Recall your last command (how you do this should now be in your firmware).  Its that comment.
+
 Delete the pound sign (x) and press ENTER. See how the loop executes?
+
 When could you use this? Heres a simple use case:
 
 You're typing a command, and suddenly realize you can't finish typing it correctly without stopping to check something or look something up.
@@ -174,10 +174,10 @@ Making it a comment lets you complete your typing, then recall it, look through 
 
 It lets you encourage yourself to try more complex programming on the command line without getting nervous.
 
-I do this all the time.  Really. Its super-useful.  You should use it every day until it becomes natural.
-Bash makes it easy to turn commands into comments.
-Shell comments go into your history.
+I do this all the time.  Really. Its super-useful.  You should use it every day until it becomes natural.Bash makes it easy to turn commands into comments. Shell comments go into your history.
+
 Editing your history lets you turn comments back into commands.
+
 Books about shell programming might tell you to put comments into scripts. Im saying "Use comments in interactive programming!" Bash agrees and goes out of its way to make that easy.
 
 The shell didnt always have comments.
@@ -196,8 +196,7 @@ they commented them like this:
 date
 : and here is the end of the script
 
-You commented your scripts by using the command  true , which always succeeds and ignores its arguments.  
-You still can.
+You commented your scripts by using the command  true , which always succeeds and ignores its arguments.  You still can.
 
 But wait. How are these different? Do you even need comments? Is a comment different from a command that does nothing?
 
@@ -209,12 +208,9 @@ What does this do?
 
 echo hello : here is a very important command
 
-
-
 The First Rule of Shell Programming
 
 The shell parses a line into words, then tries to execute the first word on the line as a command, with the rest as arguments to that command. 
-
 
 You'll gradually learn what "parses a line" means, but you can't be a shell programmer without keeping that rule in mind, from the start.
 
@@ -242,9 +238,7 @@ What does this do? (And what new does that tell you about the steps of parsing?)
 
 Even though shells now allow real comments, the colon command is still sometimes useful.  Thats a topic for the future.
 
-For today, and from now on, 
-Use '#' interactively, not just in scripts
-Pay attention to parsing
+For today, and from now on, use '#' interactively, not just in scripts and pay attention to parsing
 
 
 
