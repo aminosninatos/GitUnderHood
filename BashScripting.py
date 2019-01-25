@@ -142,8 +142,13 @@ for i in *;do echo $i;done
 * means all files in the current directory.
 
 
-
-
+Advanced sed
+----------------------------------------------------------------------
+to replace /usr/local/bin/old with /common/bin/new can be done using:
+sed 's/\/usr\/local\/bin/\/common\/bin/' <old> new
+sed 's_/usr/local/bin_/common/bin_' <old> new
+sed 's:/usr/local/bin:/common/bin:' <old> new
+sed 's|/usr/local/bin|/common/bin|' <old> new
 
 
 
