@@ -151,6 +151,22 @@ sed 's:/usr/local/bin:/common/bin:' <old> new
 sed 's|/usr/local/bin|/common/bin|' <old> new
 
 
+Type command
+------------------------------------------------------------------------------
+is used to find out what a commmand exactly is : external or internal
+internal commands are part of the shell and already in memory
+external commands need to be loaded and create a new process when executed
+for example 'ls' is external command and its internal equivalent is 'echo *'
 
+Useless commands
+--------------------------------------------------------------------------------------
+instead of: cat /etc/passwd | grep blah use:  grep blah /etc/passwd
+instead of: grep blah myfile | awk '{print $1}' use: awk '/blah/ print{$1}' myfile 
+
+
+To compare a script performance
+----------------------------------
+> time my_script
+> strace -c my_script
 
 
