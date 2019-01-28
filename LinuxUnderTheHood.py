@@ -44,3 +44,12 @@ Init & systemd
 init is the first process that the kernel has to look for.
 in newer linux distro init is redirected to systemd.
 
+Logging
+-----------------------------------------------------------
+applications may direct the logging to:
+stderr.
+own log (like apache).
+rsyslog (centralize solution).
+systemd-journald (using the command journalctl).
+
+
