@@ -52,4 +52,16 @@ own log (like apache).
 rsyslog (centralize solution).
 systemd-journald (using the command journalctl).
 
+Unit files
+-------------------------------------------------------------------------------
+systemd unit files define what needs to be started like:
+service - Mount - Timer - Path - target...
+there are stored in /usr/lib/systemd/sytem &  /etc/systemd/system
+
+Systemd target
+--------------------------------
+a target is a group of units.
+
+
+
 
