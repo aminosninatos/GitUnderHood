@@ -62,6 +62,23 @@ Systemd target
 --------------------------------
 a target is a group of units.
 
+Comparing MBR & GPT
+------------------------------------------------------
+MBR partitions:
+space for 4 partitions.
+stored in mbr (512bytes).
+uses primary, extended & logical partitions.
+maximum addressable disk size is 2 TB.
+GPT partitions:
+space for 128 partitions.
+stored in GPT partition.
+no more primary, extended & logical partitions.
+default on UEFI systems.
+stores backup at the end of the disk.
+commands used to deals with them
+for GPT  > gdisk /dev/sdx
+for MBR > fdisk /dev/sdx
+
 
 
 
