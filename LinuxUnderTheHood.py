@@ -79,6 +79,10 @@ commands used to deals with them
 for GPT  > gdisk /dev/sdx
 for MBR > fdisk /dev/sdx
 
-
+Device mapper
+-----------------------------------------------------------------------------------------------
+a generic interface to the linux kernel that can be used by different storage solutions.
+lvm, encrypted volumes or md go through device mapper.
+in order to deal with it we use the command > dmsetup.
 
 
