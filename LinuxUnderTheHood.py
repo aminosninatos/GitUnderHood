@@ -85,4 +85,26 @@ a generic interface to the linux kernel that can be used by different storage so
 lvm, encrypted volumes or md go through device mapper.
 in order to deal with it we use the command > dmsetup.
 
+VFS
+--------------------------------------------------------------------------------------
+is the abstraction layer that can talk to all different filesystems(ext4,btrfs...).
+
+Btrfs
+---------------------------------------------------------------------------------------------
+is a new filesystem that has new features like 'cow' copy on write and subvolumes.
+OpenSuse uses this kind of filesystem.
+to deal with it we use  the command > btrfs.
+it uses also snapshots that can be managed by the command > snapper.
+
+Inode
+-------------------------------------------------------------------------------
+a file is a bunch of block, an inode is the total administration of the file.
+we use the command > debugfs to see the contents of an inode.
+you should always use it after shutting down the filesystem.
+
+
+
+
+
+
 
