@@ -102,9 +102,15 @@ a file is a bunch of block, an inode is the total administration of the file.
 we use the command > debugfs to see the contents of an inode.
 you should always use it after shutting down the filesystem.
 
+FUSE
+------------------------------------------------------------------------------------------------------
+is a component part of the VFS, it allows more flexible system usage.
+for example ZFS  & NTFS are not compatible with the linux kernel so it's handled by FUSE.
 
-
-
+iSCSI
+------------------------------------------------------
+is storage over the network."i" for ip (network).
+> targetcli  is the utility use to configure it.
 
 
 
