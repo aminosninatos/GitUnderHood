@@ -238,7 +238,133 @@ What does this do? (And what new does that tell you about the steps of parsing?)
 
 Even though shells now allow real comments, the colon command is still sometimes useful.  Thats a topic for the future.
 
-For today, and from now on, use '#' interactively, not just in scripts and pay attention to parsing
+For today, and from now on, use '#' interactively, not just in scripts and pay attention to 
+
+
+Part 3.5
+-----------------------------------
+How about trying some examples, to convince yourself that you have command-line-editing under your fingers?
+
+Type these lines.  You can check to see what happens after each command.
+
+$ mkdir /tmp/bash-programming          # make a place to work
+$ cd $_                                # go to it
+$ for i in {a..e}; do >$i; done        # create some files   
+$ for i in *; do mv $i $i.bak; done    # give them all extensions
+
+That was pretty easy.  Pause to notice a few things.
+
+You're writing loops right on the command line.
+
+bash understands {a..e}, just as it understands {0..10}
+
+$_ means "the last argument on the previous line." I think of it as a pronoun, and I pronounce $_ "it." The first two lines are "make a directory, then change to it."  Very useful.
+
+When the shell is parsing a line, one of the first things it does is the redirects, creating files as needed. A new student will often try something like this:
+
+$ sort mydata > mydata
+
+That doesnt work, because the first thing bash does is the > mydata, which truncates mydata to 0 length. Next, bash runs the sort command on the now-empty file. 
+
+The student then says, "Why didn't that work, and, uh, where did all my data go?"
+
+Thats not a bug, its a feature. > mydata, all by itself without any command, just does the first step: it truncates mydata, and if it wasn't already there, it creates it, empty.
+
+You could also say this:
+
+$ for i in {a..e}; do touch $i; done           # create some files   
+
+but thats not quite the same. touch will create a file if its not there, but if it was already there, it will just update the timestamp, and won't truncate it.
+
+Quiz: How could you use a different redirection operator to do the same thing as touch?
+
+Okay, you gave all the files a file extension with a one-liner. What if you want to remove the extension?
+
+First, try your ideas on the command line:
+
+$ echo foo.bak
+foo.bak
+$ echo foo.bak | sed 's/.bak//'
+foo
+
+Great! Something like that should work.
+
+Next, recall the command and edit it, with vi commands, to loop through all your files.
+
+$ for i in *; do $(echo foo.bak | sed 's/.bak//'); done
+foo
+foo
+foo
+foo
+foo
+
+Not quite. Recall that and fix it.
+
+$ for i in *; do $(echo $i.bak | sed 's/.bak//'); done
+a.bak
+b.bak
+c.bak
+d.bak
+e.bak
+
+No, thats still not right. Why isn't it?  Oh. Sure. If $i is a.bak, then $i.bak is a.bak.bak, recall it and fix it again.
+
+$ for i in *; do $(echo $i | sed 's/.bak//'); done
+a
+b
+c
+d
+e
+
+Aha! Those are the names you want to get to. Recall it again and say what you want to do.
+
+$ for i in *; do mv $i $(echo $i | sed 's/.bak//'); done
+$ ls
+a b c d e
+
+Sometimes, if youre doing something complex, you want to see what youre going to do before you do it. Here's how.
+
+First, recall the loop to put extensions back on your files.
+
+$ for i in *; do mv $i $i.bak; done
+
+Now recall your command to rename them, and add another echo, so it looks like this:
+
+$ for i in *; do echo mv $i $(echo $i | sed 's/.bak//'); done
+mv a.bak a
+mv b.bak b
+mv c.bak c
+mv d.bak d
+mv e.bak e
+
+Yep, that looks like what you want. Recall that command again.
+
+Use ^A to append to the line, and pipe your commands to ... what?  To bash!
+
+$ for i in *; do echo mv $i $(echo $i | sed 's/.bak//'); done | bash
+
+Always remember: Bash isnt just a CLI or an interpreter to interpret scripts. It's a filter. It takes input from stdin, interprets it a line at a time, and writes to stdout.
+
+When youre running it as a CLI, thats what its doing, too, of course. The bash connected to your terminal doesnt know that stdin is what youre typing and stdout is whats going to your screen. It's just processing its input, a line at a time.
+
+You probably knew that, but creating commands on the fly and then piping them to bash to get them executed really drives that point home.
+
+This style of programming -- growing a program on the command-line a little bit at a time, and seeing the output of each step before you add on the next piece -- is like watching the growth of a river delta. I think of it as alluvial programming.
+
+
+This is part 3.5 because I had started a "How to Program in Bash, part 4," and decided I wanted to review a little first, piecing together some things I'd already talked about.
+
+When I was a college freshman (that is, a 1st-year student at the university), in 1966, our class got to try out computers. At the time, computers were rare, and programs were written by punching holes in pieces of cardboard -- punch cards. 
+
+Someone had spent the year before creating a language that could be written by typing instructions on a teletypewriter -- a teletype model 33 -- and we wrote little programs to let us analyze data from our physics laboratories. 
+
+The language, CITRAN, required that you give every line a line number.  You didn't even need to type the lines of the program in order -- you could type line 50 first, then go back and type line 1, later.All control flow was done 
+
+with GOTO statements. The line numbers were reals, not integers. If you discovered you needed to insert a line, say between line 10 and line 11, you could put in a line 11.5!
+
+
+
+
 
 
 
