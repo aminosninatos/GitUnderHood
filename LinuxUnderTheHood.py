@@ -112,5 +112,31 @@ iSCSI
 is storage over the network."i" for ip (network).
 > targetcli  is the utility use to configure it.
 
+Page cache or cache
+-----------------------------------------------------------------------------------------------------------
+is RAM that is not used to store application data and is available and can be easily cleared.
+> echo 3 >  /proc/sys/vm/drop_caches
+is the command used to free cache then we can verify using > free -m or  > less /proc/meminfo
+
+Swap memory
+------------------------------------------------------------------------------------------------------
+the best type  to know how much swap you use is to monitor inative ananymous memory :
+inactive anon = swap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
