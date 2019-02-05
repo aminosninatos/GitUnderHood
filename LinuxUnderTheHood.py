@@ -123,14 +123,27 @@ Swap memory
 the best type  to know how much swap you use is to monitor inative ananymous memory :
 inactive anon = swap
 
+Fork() & exec()
+---------------------------------------------------------------------------------------
+fork() is a system call where process makes a copy of itself to create a child process.
+next the child process calls the exec() system call to overlay itself with  other program.
+exec() can be used as an alterative to fork(), in exec() the parent code is replaced with  the child  code
+and the parent ceases to exist.
 
+Taskset
+-----------------------------------------------
+to pin a specific process to a specific processor:
+> taskset -pc 3 $(pidof dd)
+pin the process 'dd' to processor 3
 
+Top command
+--------------------------------------------------------------------------
+to add specific column to the displyed columns we use the 'f' key
+after you select the desired column to make changes permanent press capital 'W'
 
-
-
-
-
-
+Zombie process
+------------------------------------------------------------------
+is a leftover bit of dead processes that hasnt been cleaned up properly.
 
 
 
