@@ -145,6 +145,24 @@ Zombie process
 ------------------------------------------------------------------
 is a leftover bit of dead processes that hasnt been cleaned up properly.
 
+Chrt
+------------------------------------------
+manipulate real-time attributes of a process.
+
+Socket
+-----------------------------------------------------------------------
+is a component that allows communication between processes.
+is created as a file system inode which allows two processses to communicate.
+
+D-bus
+---------------------------------------------------------------------------------------------
+provides a software abstraction that creates on a virtual channel than can be used for  communication
+between a group of processes.
+
+Monitoring processes
+------------------------------------------------------------------------------------
+in order to do that we explore the /proc directory and we dive into the pid process directory.
+
 
 
 
