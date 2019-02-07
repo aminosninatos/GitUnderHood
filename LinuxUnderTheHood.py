@@ -163,6 +163,16 @@ Monitoring processes
 ------------------------------------------------------------------------------------
 in order to do that we explore the /proc directory and we dive into the pid process directory.
 
+DAC (Discretionary Access Control)
+-------------------------------------------------------------------------------------------------------
+is a means of restrictions access to objects based on the identity of subjects and/or groups to which they belong.
+in Linux two machanisms for that : owner based permissions & system capabilities.
+
+MAC (Mandatory Access Control)
+--------------------------------
+SELinux : developped by Redhat.
+Apparmor : used in Ubuntu & Suse.
+Smack : a simplified MAC solutions.
 
 
 
