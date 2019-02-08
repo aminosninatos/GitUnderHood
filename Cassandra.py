@@ -71,6 +71,18 @@ to save the schema of the keyspace Name.
 > source 'schema.cql'
 must be executed in the cqlsh command line to restore the schema.
 
+Incremental backup
+----------------------------------------------------------------------------------------------------------
+performs backups of data that has been updated after the last full snapshot is made.
+to enabel it we use either > nodetool enable backup or change Incremental_backup value in cassandra.yaml
+
+
+
+
+
+
+
+
 
 
 
