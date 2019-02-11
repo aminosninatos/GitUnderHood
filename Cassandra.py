@@ -83,8 +83,17 @@ cqlsh> copy table_name to 'file.csv' WITH DELIMITER =';' AND HEADER = TRUE;
 to Copy Data from a CSV File: 
 cqlsh> copy table_name from 'file.csv' WITH DELIMITER =';' AND HEADER = TRUE; 
 
+Cassandra security
+------------------------------------------------------------------------------------
+Authentication: How you allow applications and users to log into the cluster.
+Authorization: Deals with the granting of permissions to access a database objects.
+Cassandra bases all authentication and authorization on roles.
+By default, Cassandra doesn’t require authentication for someone to log into a cluster.
+Cassandra comes with a built-in role named cassandra and the password is cassandra.
 
-
+Configuring authentication
+-------------------------------------------------------------------------------------------------------
+Change the authentication option 'authenticator' in the cassandra.yaml file to 'PasswordAuthenticator'.
 
 
 
