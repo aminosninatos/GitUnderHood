@@ -76,6 +76,20 @@ Incremental backup
 performs backups of data that has been updated after the last full snapshot is made.
 to enabel it we use either > nodetool enable backup or change Incremental_backup value in cassandra.yaml
 
+Loading bulk data into cassandra
+-----------------------------------------------------------------------------
+to Copy Data from a Cassandra Table: 
+cqlsh> copy table_name to 'file.csv' WITH DELIMITER =';' AND HEADER = TRUE; 
+to Copy Data from a CSV File: 
+cqlsh> copy table_name from 'file.csv' WITH DELIMITER =';' AND HEADER = TRUE; 
+
+
+
+
+
+
+
+
 
 
 
