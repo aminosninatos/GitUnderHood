@@ -104,12 +104,13 @@ cqlsh> create role 'user_role' with (LOGIN = true | SUPERUSER = true | password 
 once you create roles you can configure authorization.
 
 Configuring Authorization
--------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 authorization is how you control access to various database objects such as keyspaces and tables.
 you can execute the GRANT command to grant a role privileges:
 cqlsh> grand select permission on keyspace 'keyspace_name' to 'role_name'
 cqlsh> grand all permissions on 'keyspace_name' to 'role_name'
-
+this GRANT command will fail because the default authorizer, which happens to be AllowAllAuthorizer.
+to configure authorization, edit the cassandra.yaml file and specify CassandraAuthorizer as the authorizer.
 
 
 
