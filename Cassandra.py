@@ -96,6 +96,21 @@ Configuring authentication
 Change the authentication option 'authenticator' in the cassandra.yaml file to 'PasswordAuthenticator'.
 
 
+Creating Roles
+----------------------------------------------------------------------------------------
+You can create roles only by logging in as a role (could be the default role cassandra).
+You run the CREATE ROLE command to create a role :
+cqlsh> create role 'user_role' with (LOGIN = true | SUPERUSER = true | password = 'password')
+once you create roles you can configure authorization.
+
+Configuring Authorization
+-------------------------------------------------------------------------------------------------
+authorization is how you control access to various database objects such as keyspaces and tables.
+you can execute the GRANT command to grant a role privileges:
+cqlsh> grand select permission on keyspace 'keyspace_name' to 'role_name'
+cqlsh> grand all permissions on 'keyspace_name' to 'role_name'
+
+
 
 
 
