@@ -95,7 +95,6 @@ Configuring authentication
 -------------------------------------------------------------------------------------------------------
 Change the authentication option 'authenticator' in the cassandra.yaml file to 'PasswordAuthenticator'.
 
-
 Creating Roles
 ----------------------------------------------------------------------------------------
 You can create roles only by logging in as a role (could be the default role cassandra).
@@ -112,10 +111,20 @@ cqlsh> grand all permissions on 'keyspace_name' to 'role_name'
 this GRANT command will fail because the default authorizer, which happens to be AllowAllAuthorizer.
 to configure authorization, edit the cassandra.yaml file and specify CassandraAuthorizer as the authorizer.
 
-
-
-
-
+Checking the Cluster Health
+-------------------------------------------------------------------------------------------------------------------------------------
+> nodetool status
+to check the health of a clusters nodes. In addition, it also lets you know about the distribution of data among the nodes.
+> nodetool info
+to get node information, such as disk load, uptime, and heap memory usage.
+> nodetool tpstats
+shows the usage statistics of thread pools.Cassandra breaks tasks into stages, with each stage using a separate queue and a thread pool.
+> nodetool proxyhistograms 
+shows the network statistics in a cluster.
+> nodetool tablestats 
+command to get statistics about one or more tables.
+> nodetool netstats -H
+to get network information about a node.
 
 
 
