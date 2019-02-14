@@ -191,3 +191,13 @@ Monitoring hardware
 >lsblk
 >lscpu
 > lsdev
+
+Sysfs
+----------------------------------------------------------------
+is used by the kernel to provide information about devices & hardware.
+> udevadm   is a command to interface query device info.
+
+
+
+
+
