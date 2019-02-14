@@ -174,10 +174,20 @@ SELinux : developped by Redhat.
 Apparmor : used in Ubuntu & Suse.
 Smack : a simplified MAC solutions.
 
+Kernel device interface
+-------------------------------------------------------------------------
+hardware <----> driver(kernel modules)<----> /sys <------> kernel.
+udev is the process that helps kernel initializing hardware.
+/dev (device nodes)<----> major & minor <----> kernel <---->  /sys (sysfs).
+device nodes are  files that interface the user & allow the user to use hardware.
 
-
-
-
-
-
-
+Monitoring hardware
+----------------------------------------------
+> dmidecode | less  : showing BIOS information.
+> lspci -k  : shows pci interfaces & kernel modules.
+> lsusb  : shows usb interfaces.
+> dmesg | less 
+> lsscsi
+>lsblk
+>lscpu
+> lsdev
