@@ -125,7 +125,16 @@ shows the network statistics in a cluster.
 command to get statistics about one or more tables.
 > nodetool netstats -H
 to get network information about a node.
+> nodetool cfstats keyspace_name
+rovides statistics on each keyspace & tables including read latency, write latency, and total disk space used.
 
+Checking connections
+----------------------------------------------------------
+to allow remore connections you should change the values:
+rpc_address to 0.0.0.0
+broadcast_rpc_address to your extrenal IP address.
+check remote connections on port 9042
+> netstat | grep 9042
 
 
 
