@@ -182,22 +182,25 @@ udev is the process that helps kernel initializing hardware.
 device nodes are  files that interface the user & allow the user to use hardware.
 
 Monitoring hardware
-----------------------------------------------
+----------------------------------------------------
 > dmidecode | less  : showing BIOS information.
 > lspci -k  : shows pci interfaces & kernel modules.
 > lsusb  : shows usb interfaces.
 > dmesg | less 
 > lsscsi
->lsblk
->lscpu
+> lsblk
+> lscpu
 > lsdev
 
 Sysfs
-----------------------------------------------------------------
+----------------------------------------------------------------------
 is used by the kernel to provide information about devices & hardware.
 > udevadm   is a command to interface query device info.
 
-
-
-
+Udev
+-------------------------------------------------------------------------------
+the kernel initiates device loading and next sends out uevents to udevd daemon.
+udevd catches the event and decides how to handle it.
+udevd next reads its rules(/lib/udev/rules.d) and takes actions. 
+> udevadm monitor  : is udev monitoring tool.
 
