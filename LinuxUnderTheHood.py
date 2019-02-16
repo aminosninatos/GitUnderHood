@@ -204,3 +204,21 @@ udevd catches the event and decides how to handle it.
 udevd next reads its rules(/lib/udev/rules.d) and takes actions. 
 > udevadm monitor  : is udev monitoring tool.
 
+Kernel modules
+------------------------------------------------------
+> lsmod : to list all loaded modules.
+> modinfo module_name  : to get info about a module.
+> modprobe module_name  : to load a module.
+> modprobe -r module_name  : to remove a module.
+
+Tainted kernel
+-----------------------------------------------------------------------
+means your kernel is using no open source modules(propriatary drivers).
+> cat /proc/sys/kernel/Tainted
+is 0 then you are using only open source modules else you are tainted .
+
+
+
+
+
+
