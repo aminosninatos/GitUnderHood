@@ -217,6 +217,19 @@ means your kernel is using no open source modules(propriatary drivers).
 > cat /proc/sys/kernel/Tainted
 is 0 then you are using only open source modules else you are tainted .
 
+Proc filesystem
+------------------------------------------------------------------------------
+is devided in 3 main areas:
+-files.
+-pid.
+-sys which has subdirectories like kernel, net(networking) and vm(memory).
+you can make changes using > echo value command but that will be only runtime.
+if you want changes to become permanent after reboot you should use > sysctl.
+sysctl command reads the /etc/sysctl.conf file.
+> sysctl -a will show you the tuneables variables.
+
+
+
 
 
 
