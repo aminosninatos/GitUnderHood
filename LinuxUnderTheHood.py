@@ -228,8 +228,13 @@ if you want changes to become permanent after reboot you should use > sysctl.
 sysctl command reads the /etc/sysctl.conf file.
 > sysctl -a will show you the tuneables variables.
 
-
-
+Ip command
+--------------------------------------------------------------------
+IFCONFIG command is deprecated and replaced by IP command in Linux. 
+> ip addr add 192.168.50.5 dev eth1
+to assign IP Address to a specific interface (eth1).
+> ip addr show or > ip a
+To get the depth information of your network interfaces. 
 
 
 
