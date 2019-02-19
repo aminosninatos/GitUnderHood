@@ -234,7 +234,26 @@ IFCONFIG command is deprecated and replaced by IP command in Linux.
 > ip addr add 192.168.50.5 dev eth1
 to assign IP Address to a specific interface (eth1).
 > ip addr show or > ip a
-To get the depth information of your network interfaces. 
+To get the depth information of your network interfaces.
+
+SSH keys
+------------------------------------------------------------------------------
+to set up ssh keys so a workstation can login to ubuntu without credentials:
+on the workstation:
+> ssh-keygen : generates a public key pair.
+> ssh-copy-id ubuntu : copy the public key over the ubuntu server.
+> ssh ubuntu : now you can login without providing a password.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
