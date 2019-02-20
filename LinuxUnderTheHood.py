@@ -244,12 +244,18 @@ on the workstation:
 > ssh-copy-id ubuntu : copy the public key over the ubuntu server.
 > ssh ubuntu : now you can login without providing a password.
 
+Memory optimization
+---------------------------------------------------------
+to set the maximium limit memory for an application:
+> systemctl set-property httpd.service MemoryLimit=512M
+> systemctl daemon-reload
+> systemctl restart httpd
+> systemctl status httpd
 
-
-
-
-
-
+I/O optimization
+-------------------------------
+to see if a file is fragmented:
+> filefrag -v file_name
 
 
 
