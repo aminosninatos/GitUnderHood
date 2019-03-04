@@ -257,6 +257,19 @@ I/O optimization
 to see if a file is fragmented:
 > filefrag -v file_name
 
+Configuring LVM storage 
+---------------------------------------------------------------------
+1- manual install.
+2- create a  new primary partition  : /boot partition (around 250 MB).
+3- use  configure logical volume manager.
+4- create a volume groupe by using teh free remaining space.
+5- create a logical volume on this volume groupe lvsystem.
+6- create a logical volume on this volume groupe lvswap.
+7- create a logical volume on this volume groupe lvsrv.
+8- use the corresponding filesystem & mount point to each logical volume.
+9- write changes to disk.
+
+
 
 
 
