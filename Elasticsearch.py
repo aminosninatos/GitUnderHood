@@ -19,3 +19,11 @@ To get all documents in an index: GET index/type/_search
 Types
 ------------------------------------------------------------------------
 Elasticsearch has 5 data types: String,Boolean, Numbers, Date & Binary 
+
+_Source
+-------------------------------------------------------------------------------
+To keep only the indexed version of the data by disabling the _source variable:
+"_source" : {
+	"enabled" : false
+}
+And store only the data we want : "store": true
