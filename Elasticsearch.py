@@ -27,3 +27,18 @@ To keep only the indexed version of the data by disabling the _source variable:
 	"enabled" : false
 }
 And store only the data we want : "store": true
+
+
+Querying data
+-----------------------------------------------------------------
+Simple query : GET http://server:9200/index/_search?q=field:text
+
+Domain Specific language (Query DSL)
+--------------------------------------
+GET http://server:9200/index/_search
+{
+   "query": {
+      "match_all": {}
+   }
+}
+The result with higher score comes first.
