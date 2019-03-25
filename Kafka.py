@@ -3,8 +3,8 @@ Kafka
 -------------
 
 
-Source system(s) ----------DATA------------->Target system(s)
-
+Source system(s) ---------------DATA------------->Target system(s)
+(website events,pricing,logs)---KAFKA------->(database,Email system, Analytics)
 
 Kafka theory
 ----------------------------------------------------------------------
@@ -21,3 +21,9 @@ Topics should have a replication factor > 1
 Each partition have one leader brocker and multiple ISR(in-syc-replica).
 Zookeeper decides who is the leader and ISR.
 
+Producer
+--------------------------------------------------------------------------------------------------------
+Writes data to topics.
+The load is balanced to many brockers due to partitions numbers.
+The Producers can choose to receive acknowledgements(confirmation).
+Producers can choose to send a key with a message so all messages for that key go to the same partition.
