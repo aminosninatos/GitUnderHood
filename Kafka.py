@@ -39,3 +39,8 @@ Consumer offsets
 ---------------------------------------------------------------------
 Kafka stores the offeets at which a consumer group has been reading.
 The offsets committed live in a kafka topic named __consumer_offsets.
+
+Bootstrap servers
+-----------------------------------------------------------------------------------
+That means that you need only to connect to one broker to connect to all brockers.
+Each broker knows about all brockers, topics and partitions.
