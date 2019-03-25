@@ -27,3 +27,15 @@ Writes data to topics.
 The load is balanced to many brockers due to partitions numbers.
 The Producers can choose to receive acknowledgements(confirmation).
 Producers can choose to send a key with a message so all messages for that key go to the same partition.
+
+Consumer
+--------------------------------------------------------------------
+Consumers read data from a topic.
+Data is read in order within each partitions.
+Consumers read data in consumer groups.
+Each consumer within a group reads data from exclusive partitions.
+
+Consumer offsets
+---------------------------------------------------------------------
+Kafka stores the offeets at which a consumer group has been reading.
+The offsets committed live in a kafka topic named __consumer_offsets.
