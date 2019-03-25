@@ -44,3 +44,11 @@ Bootstrap servers
 -----------------------------------------------------------------------------------
 That means that you need only to connect to one broker to connect to all brockers.
 Each broker knows about all brockers, topics and partitions.
+
+Zookeeper
+--------------------------------------------------------
+Manages brockers and helps performing leader election.
+Sends notifications to kafka in case of changes.
+Kafka cannot work without Zookeeper.
+Zookeeper works with odd number of servers(3,5,7...).
+
