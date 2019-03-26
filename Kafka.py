@@ -81,10 +81,14 @@ To create a consumer in a group:
 Kafka  consumer group command line
 ----------------------------------------------------------------------------------------
 To list all consumer groups:
-> kafka-consumer-group --bootstrap-server 127.0.0.1:9092 --list
+> kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --list
 To describe a consumer group:
-> kafka-consumer-group --bootstrap-server 127.0.0.1:9092 --describe -group group-name
+> kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --describe -group group-name
 
+Resetting offsets
+-----------------------------------------------------------------------------------------------------------------------------------------
+To reset offsets:
+> kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-app --reset-offsets --to-earliest --execute --topic topic-name
 
 
 
