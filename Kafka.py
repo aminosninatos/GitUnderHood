@@ -63,5 +63,22 @@ To describe a topic:
 To delete a topic:
 > kafka-topics --zookeeper 127.0.0.1:2181 --topics topic-name --delete
 
+Kafka console Producer command line
+------------------------------------------------------------------------------------------------------
+To create a Producer:
+> kafka-console-producer --broker-list 127.0.0.1:9092 --topic topic-name --producer-proprety acks=all
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
