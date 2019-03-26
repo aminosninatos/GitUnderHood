@@ -52,3 +52,16 @@ Sends notifications to kafka in case of changes.
 Kafka cannot work without Zookeeper.
 Zookeeper works with odd number of servers(3,5,7...).
 
+Kafka command line interface
+------------------------------------------------------------------------------------------------------------
+To create a topic:
+> kafka-topics --zookeeper 127.0.0.1:2181 --topic topic-name --create --partitions 3 --replication-factor 2
+To list topics:
+> kafka-topics --zookeeper 127.0.0.1:2181 --list
+To describe a topic:
+> kafka-topics --zookeeper 127.0.0.1:2181 --topics topic-name --describe
+To delete a topic:
+> kafka-topics --zookeeper 127.0.0.1:2181 --topics topic-name --delete
+
+
+
