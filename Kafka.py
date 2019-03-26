@@ -73,7 +73,17 @@ Kafka console consumer command line
 To create a consumer:
 > kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic topic-name --from-beginning
 
+Kafka console consumer in groups command line
+---------------------------------------------------------------------------------------------------
+To create a consumer in a group:
+> kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic topic-name --group my-first-app
 
+Kafka  consumer group command line
+----------------------------------------------------------------------------------------
+To list all consumer groups:
+> kafka-consumer-group --bootstrap-server 127.0.0.1:9092 --list
+To describe a consumer group:
+> kafka-consumer-group --bootstrap-server 127.0.0.1:9092 --describe -group group-name
 
 
 
