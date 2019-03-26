@@ -68,8 +68,10 @@ Kafka console Producer command line
 To create a Producer:
 > kafka-console-producer --broker-list 127.0.0.1:9092 --topic topic-name --producer-proprety acks=all
 
-
-
+Kafka console consumer command line
+-----------------------------------------------------------------------------------------------
+To create a consumer:
+> kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic topic-name --from-beginning
 
 
 
