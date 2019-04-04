@@ -42,3 +42,29 @@ GET http://server:9200/index/_search
    }
 }
 The result with higher score comes first.
+
+
+Mappings
+--------------------------------------------------------
+is a schema definition:
+$ curl -XPUT server:9200/index_name -d '
+{
+   "mappings": {
+
+      "type_name": {
+      				"_all":{"enabled":false},
+      				"properties":{
+      						       "year":{"type":"date"}
+      				             }
+                    }
+                }
+}'
+
+To retreive the mappings:
+$ curl -XGET server:9200/index_name/_mapping/type_name?pretty
+
+
+
+
+
+
