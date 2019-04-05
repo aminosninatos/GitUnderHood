@@ -77,8 +77,9 @@ Every document haves a _version field, when you Update an existing document
 a new document is created with an incrementd_version, the old document is 
 marked for deletion.
 
-
-
+Deleting a document
+----------------------------------------------------------------
+$ curl -XDELETE server:9200/index_name/index_type/document_id
 
 
 
