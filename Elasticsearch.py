@@ -64,6 +64,35 @@ To retreive the mappings:
 $ curl -XGET server:9200/index_name/_mapping/type_name?pretty
 
 
+Update a document
+-------------------------------------------------------------------------
+$ curl -XPOST server:9200/index_name/index_type/document_id/_update -d '
+{
+   "doc": {
+            "filed_name":"value"
+            }
+}'
+
+Every document haves a _version field, when you Update an existing document
+a new document is created with an incrementd_version, the old document is 
+marked for deletion.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
