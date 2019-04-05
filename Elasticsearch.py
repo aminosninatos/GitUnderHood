@@ -82,6 +82,13 @@ Deleting a document
 $ curl -XDELETE server:9200/index_name/index_type/document_id
 
 
+Using Analyzers
+-----------------------------------------------------------------
+Sometimes text fields should be exact match:
+then we use no_analyzer mapping
+Search on analyzed fields will return anything remotely relevant:
+deponding on the Analyzer, result will be case-insensitive,stemmed
+stopwords removed,synonyms applied etc.
 
 
 
