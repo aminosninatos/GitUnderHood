@@ -91,6 +91,9 @@ deponding on the Analyzer, result will be case-insensitive,stemmed
 stopwords removed,synonyms applied etc.
 
 
+Query line Search
+---------------------------------------------------------------------------
+$ curl server:9200/index_name/index_type/_search?q=filed_name:value&pretty
 
 
 
