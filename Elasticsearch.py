@@ -92,8 +92,37 @@ stopwords removed,synonyms applied etc.
 
 
 Query line Search
----------------------------------------------------------------------------
-$ curl server:9200/index_name/index_type/_search?q=filed_name:value&pretty
+---------------------------------------------------------------------------------
+$ curl -XGET server:9200/index_name/index_type/_search?q=filed_name:value&pretty
+
+
+Request body Search
+-------------------------------------------------------------------
+$ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
+{
+   "query": {
+
+            "match" : {
+                        "filed_name":"value"
+                      }
+            }
+}'     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
