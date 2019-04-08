@@ -109,10 +109,33 @@ $ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
 }'     
 
 
+Phrase Search
+---------------------------------------------------------------------
+must find all the terms in the right order
+$ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
+{
+   "query": {
+
+            "match_phrase" : {
+                        "filed_name":"value"
+                      }
+            }
+}'     
 
 
+Slop
+-----------------------------------------------------------------------------------------
+the order matters but you are OK with some terms in between
+the slop means how far you are willing to let the term moves to satisfy the phrase Search
+$ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
+{
+   "query": {
 
-
+            "match_phrase" : {
+                        "filed_name":{query:"value","slop":1}
+                      }
+            }
+}'     
 
 
 
