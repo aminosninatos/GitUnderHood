@@ -138,7 +138,10 @@ $ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
 }'     
 
 
-
+Changing mappings
+------------------------------------------------------------------------------------------------------
+you cannot change a mappings on an existing index, you would have to delete it, set up a new mappings.
+like the number of shards this is somthing you have to think about before importing data to your index. 
 
 
 
