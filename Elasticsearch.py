@@ -163,9 +163,30 @@ $ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
 }'     
 
 
+Prefix query
+--------------------------------------------------------------------
+$ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
+{
+   "query": {
+
+            "prefix" : {
+                        "filed_name":"prefix_value"
+                      }
+            }
+}'     
 
 
+Wildcard query
+--------------------------------------------------------------------
+$ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
+{
+   "query": {
 
+            "wildcard" : {
+                        "filed_name":"value*"
+                      }
+            }
+}'     
 
 
 
