@@ -141,7 +141,17 @@ $ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
 Changing mappings
 ------------------------------------------------------------------------------------------------------
 you cannot change a mappings on an existing index, you would have to delete it, set up a new mappings.
-like the number of shards this is somthing you have to think about before importing data to your index. 
+like the number of shards this is somthing you have to think about before importing data to your index.
+
+Fuzzy matches
+-----------------------------------------------------------
+Is a way to account for typos and misspellings.
+for an edit distance of 1 (fuziness=1).
+- substitution of characters (interstellar->intersteller).
+- insertiond of characters (interstellar->instersteller).
+- deletion of characters (interstellar->intersteler).
+
+
 
 
 
