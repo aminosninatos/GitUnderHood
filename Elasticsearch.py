@@ -152,6 +152,17 @@ for an edit distance of 1 (fuziness=1).
 - deletion of characters (interstellar->intersteler).
 
 
+$ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
+{
+   "query": {
+
+            "fuzzy" : {
+                        "filed_name":{"value":"search_value","fuziness":1}
+                      }
+            }
+}'     
+
+
 
 
 
