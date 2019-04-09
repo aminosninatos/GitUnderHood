@@ -202,6 +202,37 @@ $ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
 }'     
 
 
+Logstash
+---------------------------------------------------------------------------------------------------------------------
+Logstash is an open source data collection engine with real-time pipelining capabilities. 
+Logstash can dynamically unify data from disparate sources and normalize the data into destinations of your choice.
+after adding the Elasticsearch repos, we can install it :
+> apt install logstash
+then we configure the config file in /etc/logstash/conf.d/logstash.conf according to input and output we want:
+for example to feed apache access log files to Elasticsearch, logstash.conf should be:
+
+input { 
+		file {
+		    path => "/tmp/access_log"
+		    start_position => "beginning"
+		    ignore_older => 0
+		    }
+      }
+
+filter {
+  grok {
+    match => { "message" => "%{COMBINEDAPACHELOG}" }
+  }
+  date {
+    match => [ "timestamp" , "dd/MMM/yyyy:HH:mm:ss Z" ]
+  }
+}
+
+output {
+  elasticsearch { hosts => ["localhost:9200"] }
+  stdout { codec => rubydebug }
+}
+
 
 
 
