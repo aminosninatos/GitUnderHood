@@ -189,6 +189,19 @@ $ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
 }'     
 
 
+Search as you type
+--------------------------------------------------------------------
+$ curl -XGET server:9200/index_name/index_type/_search?pretty -d '
+{
+   "query": {
+
+            "match_phrase_prefix" : {
+                        "filed_name":{"query":"search_value","slop":10}
+                      }
+            }
+}'     
+
+
 
 
 
