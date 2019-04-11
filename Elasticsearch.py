@@ -235,6 +235,22 @@ output {
 
 
 
+Elasticsearch aggregations
+------------------------------------------------------------------------------------------------
+The aggregations framework helps provide aggregated data based on a search query.
+It is based on simple building blocks called aggregations, that can be composed in order to build 
+complex summaries of the data.
+the syntax is as follows:
+$ curl -XGET server:9200/index_name/index_type/_search?size=0&pretty -d '
+{
+   "aggs" : {
+    "<aggregation_name>" : {
+        "<aggregation_type>" : {
+            <aggregation_body>
+        }
+        [,"meta" : {  [<meta_data_body>] } ]
+        
+}'     
 
 
 
