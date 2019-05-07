@@ -29,4 +29,9 @@ Locked down to a region /vpv combination.
 If your app is not accessible (time out) then its a security group issue.
 If your app gives (connection refused )error then its an app error or its not launched. 
 
+AMI
+-------------------------------------------------------------
+An image used to create our instance.
+You can create your own AMI or use Public AMI .
+AMI take space and lives in Amazon S3 storage.
 
