@@ -29,4 +29,9 @@ Locked down to a region /vpv combination.
 If your app is not accessible (time out) then its a security group issue.
 If your app gives (connection refused )error then its an app error or its not launched. 
 
+EC2 user data
+---------------------------------------------------------------------------------
+User data is a bootstrap script that is executed when the machine starts.
+It is only run once when machine first starts not in reboots, stops or restarts.
+This script can be run in the advanced details section when creating an instance. 
 
