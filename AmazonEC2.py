@@ -41,3 +41,6 @@ An image used to create our instance.
 You can create your own AMI or use Public AMI .
 AMI take space and lives in Amazon S3 storage.
 
+Choosing EC2 instances
+-----------------------------------------------------------------------
+You can use this website to get help : ec2instances.info
