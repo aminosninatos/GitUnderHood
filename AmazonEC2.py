@@ -42,5 +42,7 @@ You can create your own AMI or use Public AMI .
 AMI take space and lives in Amazon S3 storage.
 
 Choosing EC2 instances
------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 You can use this website to get help : ec2instances.info
+Burstable Instances (T2)  has Ok CPU performance but when the machine needs to process
+something unexpected (spike in load) it can burst  and CPU can be very good.
