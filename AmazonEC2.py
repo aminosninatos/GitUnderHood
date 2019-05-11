@@ -53,6 +53,10 @@ Cluster : low latency 10Gbps network, same rack same availabality zone.
 Spread  : spread across multiple availabality zones.
 t2 instances dont support placement groups.
 
+Elastic IPs
+------------------------------------------------------------------------------------------------
+When you stop and then start an EC2 instance, it can change its public IP.
+if you need a fixed IP you need what we call an elastic IP.
 
 
 
