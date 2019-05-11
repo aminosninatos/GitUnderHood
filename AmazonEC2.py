@@ -46,3 +46,16 @@ Choosing EC2 instances
 You can use this website to get help : ec2instances.info
 Burstable Instances (T2)  has Ok CPU performance but when the machine needs to process
 something unexpected (spike in load) it can burst  and CPU can be very good.
+
+Placement groups
+---------------------------------------------------------------------------
+Cluster : low latency 10Gbps network, same rack same availabality zone.
+Spread  : spread across multiple availabality zones.
+t2 instances dont support placement groups.
+
+
+
+
+
+
+
