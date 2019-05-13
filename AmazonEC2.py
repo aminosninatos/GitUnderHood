@@ -58,6 +58,13 @@ Elastic IPs
 When you stop and then start an EC2 instance, it can change its public IP.
 if you need a fixed IP you need what we call an elastic IP.
 
+Load balancers
+----------------------------------------------------------------------------------------------------------------
+Are servers that forward internet traffic to multiple servers(EC2 instances) to spread load.
+ELB(EC2 load balancer) is a managed load balancer.
+3 kinds of LBs ( Classic v1 - Application Lb v2 2016 - Network LB v2  2017).
+
+
 
 
 
