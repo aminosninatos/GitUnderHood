@@ -65,6 +65,21 @@ ELB(EC2 load balancer) is a managed load balancer.
 3 kinds of LBs ( Classic v1 - Application Lb v2 2016 - Network LB v2  2017).
 
 
+Auto scaling groups(ASG)
+-----------------------------------------------------------------
+The goal is :
+Scale out(add EC2 instances) to match an increase in load.
+Scale in(remove EC2 instances) to match an decrease in load.
+Insure that we have a maxiumum and minumum of running machines.
+
+
+
+
+
+
+
+
+
 
 
 
