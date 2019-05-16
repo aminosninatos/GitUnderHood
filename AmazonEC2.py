@@ -73,8 +73,11 @@ Scale in(remove EC2 instances) to match an decrease in load.
 Insure that we have a maxiumum and minumum of running machines.
 
 
-
-
+Elastic block store(EBS)
+------------------------------------------------------------------------------
+It is a network drive that you can attach your instances to while they run.
+it allows your instances to persist data.
+EBS has 4 types: GP2(ssd) IOI(ssd) STI(hdd) and SCI(hdd).
 
 
 
