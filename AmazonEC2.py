@@ -80,6 +80,14 @@ it allows your instances to persist data.
 EBS has 4 types: GP2(ssd) IOI(ssd) STI(hdd) and SCI(hdd).
 
 
+EC2 instances run modes
+--------------------------------------------------------------------------
+EC2 on-demand : used by default you pay what you use.
+Reserved instances : you got a discount when you use for a long time.
+Spot instances : cheaper instances you can lose any time.
+Dedicated hosts : more expensive as you reserve hardware. 
+
+
 
 
 
