@@ -16,7 +16,7 @@ Applications
 5. Install private & public keys (run > ssh-keygen command) and put public in authorized_keys/ directory in .ssh/
 6. Modify sshd_config file to allow only public key authentication (PasswordAuthetication no)
 7. Install docker
-8. Install zsh shell & Install Oh-my-zsh & install zsh-autosuggestions plugin in .zshrc file
+8. Install zsh shell & Install Oh-my-zsh & install zsh-autosuggestions plugin in .zshrc file & install tilix terminal
 9. Install ddclient & verify using :
 > ddclient -daemon=0 -debug -verbose -noquiet -debug -query
 10. Customize vim by adding .vimrc & pathogen plugin with vim-airline & Monokai color scheme
