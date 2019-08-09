@@ -12,3 +12,5 @@ OpenVPN Steps
 5- Install the OpenVPN Client Export Package.
 6- Add the VPN User.
 7- Download the Client Configuration using to Client Export. 
+NB : in order to access all devices in your LAN via VPN they should all be configured with pfsense LAN interface
+as default gateway.   
