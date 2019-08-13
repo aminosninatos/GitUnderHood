@@ -13,4 +13,10 @@ OpenVPN Steps
 6- Add the VPN User.
 7- Download the Client Configuration using to Client Export. 
 NB : in order to access all devices in your LAN via VPN they should all be configured with pfsense LAN interface
-as default gateway.   
+as default gateway.
+
+DNSBL
+--------------
+In order to work with DNSBL, all your clients should use PFSense as the default DNS resolver.
+You can implement that using a firtewall rule that allows only traffic to port 53 on the LAN net.
+You have then you provide a list of blacklisted site from PI-HOLE or Steven Black Github repositories.
