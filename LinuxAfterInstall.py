@@ -20,7 +20,9 @@ Applications
 9. Install ddclient & verify using :
 > ddclient -daemon=0 -debug -verbose -noquiet -debug -query
 10. Customize vim by adding .vimrc & pathogen plugin with vim-airline & Monokai color scheme
-11. Configure static IP : vim /etc/sysconfig/network-scripts/ifcfg-eth016 & systemctl stop NetworkManager  
+11. Configure static IP : vim /etc/sysconfig/network-scripts/ifcfg-eth016 & systemctl stop NetworkManager
+12. Install vim editor.
+13. Install youtube-dl to download youtube videos.   
 
 
 Selinux important commands
