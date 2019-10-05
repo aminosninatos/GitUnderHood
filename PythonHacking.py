@@ -20,3 +20,7 @@ options.x = x
 Atom shortcut duplicate a line
 --------------------------------
 Cmd + Shift + D
+
+Check_ouput function
+------------------------
+this function of the subprocess module allows to execute a command and catch the result in a variable.
