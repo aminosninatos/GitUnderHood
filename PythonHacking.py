@@ -1,4 +1,4 @@
-Atom shortcuts
+Atom shortcuts to un/comment code
 -----------------------------------------
 To comment & uncomment we use : Cmd + /
 
