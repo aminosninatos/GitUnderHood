@@ -24,3 +24,10 @@ Cmd + Shift + D
 Check_ouput function
 ------------------------
 this function of the subprocess module allows to execute a command and catch the result in a variable.
+
+Regular expression
+-----------------------
+we need to import re module and use the search function
+re.search(r"Regular_expression",variable_to_search_within)
+as a result we get an object and its first group contains the first match
+result= object.group(0)
