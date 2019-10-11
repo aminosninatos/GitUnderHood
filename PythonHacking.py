@@ -31,3 +31,13 @@ we need to import re module and use the search function
 re.search(r"Regular_expression",variable_to_search_within)
 as a result we get an object and its first group contains the first match
 result= object.group(0)
+
+Scapy module
+---------------------
+is a python module that allows to send sniff and do a lot with network packets.
+with python 3 we used it : import scapy.all as scapy.
+to create an ARP packet : packet = scapy.ARP().
+to view all fields of the ARP method : print(scapy.ls(scapy.ARP)).
+to view a summary of the packet : print(packet.summary()).
+to view a all packet fileds of the packet : print(packet.show()).
+to send a packet : scapy.send(packet).
