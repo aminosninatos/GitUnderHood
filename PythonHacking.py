@@ -41,3 +41,17 @@ to view all fields of the ARP method : print(scapy.ls(scapy.ARP)).
 to view a summary of the packet : print(packet.summary()).
 to view a all packet fileds of the packet : print(packet.show()).
 to send a packet : scapy.send(packet).
+
+Dynamic printing
+--------------------------
+to print statement always in one line and not to append newline character:
+in python 2.7 and below :
+import sys
+print("\rYour_statement"),
+# \r to start printing at beginning of the line
+# , not to append newline character
+sys.stdout.flush()
+# to flush the buffer and print it
+in python 3 and above:
+print("\rYour_statement", end="")
+# end="" not to add a newline character
