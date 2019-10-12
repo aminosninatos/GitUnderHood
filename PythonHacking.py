@@ -55,3 +55,10 @@ sys.stdout.flush()
 in python 3 and above:
 print("\rYour_statement", end="")
 # end="" not to add a newline character
+
+Handling exceptions
+-----------------------------
+try :
+    # Your normal code here
+except exception_error:
+    # Your error Handling code here
