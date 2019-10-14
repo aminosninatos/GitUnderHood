@@ -62,3 +62,13 @@ try :
     # Your normal code here
 except exception_error:
     # Your error Handling code here
+
+capture & filter data
+----------------------------
+scapy has a sniffer function:
+scapy.sniff(iface=interface, prn= call_back_function )
+each packet contains a number of layers--> print(packet.show()).
+each layer contains a number of fields--> print(packet[layer_name]).
+fiels contain data that we are looking for--> print(packet[layer_name].field).
+to work with http layer we need to install scapy_http python module using pip.
+from scapy.layers import http.
