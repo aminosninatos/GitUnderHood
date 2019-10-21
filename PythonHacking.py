@@ -72,3 +72,13 @@ each layer contains a number of fields--> print(packet[layer_name]).
 fiels contain data that we are looking for--> print(packet[layer_name].field).
 to work with http layer we need to install scapy_http python module using pip.
 from scapy.layers import http.
+
+Non-capturingRegular expression
+-----------------------------------
+if you wanna get just a part of the result of a search using Regular_expression
+you enclose your regex into two groups with ?: in front of the regex you dont want
+to get in the resuly:
+re.search("(?:Regex1)(Regex2)",variable_to_search_within)
+as a result we get an object and its second group contains the first match
+result= object.group(1).
+we test that using the site : www.pythex.org
