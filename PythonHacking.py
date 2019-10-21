@@ -73,7 +73,11 @@ fiels contain data that we are looking for--> print(packet[layer_name].field).
 to work with http layer we need to install scapy_http python module using pip.
 from scapy.layers import http.
 
+<<<<<<< HEAD
 Non-capturing Regular expression
+=======
+Non-capturingRegular expression
+>>>>>>> 1b37e5a4853763b83b7f5777c7ee738f0300b24a
 -----------------------------------
 if you wanna get just a part of the result of a search using Regular_expression
 you enclose your regex into two groups with ?: in front of the regex you dont want
