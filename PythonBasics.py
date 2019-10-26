@@ -12,3 +12,11 @@ mystr = f'hello, {str1}'
 in python 3.5 and below we can use:
 mystr0 = 'hello, {}'
 mystr = 'hello, '.format(str1)
+
+Lists, tuples, sets and dictionaries
+-------------------------------------
+my_list = [x,y,z]
+my_tuple = (x,y,z)
+my_set = {x,y,z}
+my_dictionary = {x:y,z:t,v:w}
+for lists, tupels and dictionaries, you can get the first element: my_list[0]
