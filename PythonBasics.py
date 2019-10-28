@@ -20,3 +20,15 @@ my_tuple = (x,y,z)
 my_set = {x,y,z}
 my_dictionary = {x:y,z:t,v:w}
 for lists, tupels and dictionaries, you can get the first element: my_list[0]
+
+Iterables & range
+------------------
+primes = [x,y,z]
+for prime in primes:
+    print(prime)
+
+if x in primes:
+    print(f'{x} does exist in primes')
+
+for i in range(10):
+    print(i) # will print from 0 to 9
