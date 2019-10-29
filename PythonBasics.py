@@ -32,3 +32,10 @@ if x in primes:
 
 for i in range(10):
     print(i) # will print from 0 to 9
+
+List comprehension
+-------------------
+numbers = list(range(10))
+double_numbers = [n * 2 for n in numbers]
+you can even construct with condition
+even_numbers = [n for n in numbers if n % 2 == 0]
