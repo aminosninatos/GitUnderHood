@@ -39,3 +39,10 @@ numbers = list(range(10))
 double_numbers = [n * 2 for n in numbers]
 you can even construct with condition
 even_numbers = [n for n in numbers if n % 2 == 0]
+
+lambda or anonymous functions
+------------------------------
+functions that do not have names are called lambda
+example:  lambda x,y : x + y
+to use it : (lambda x,y : x + y)(10,5)
+to name it : my_sum = lambda x,y : x + y
