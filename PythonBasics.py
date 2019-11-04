@@ -59,3 +59,10 @@ class Student:
         retrun x + y
 
 student_one = Student(x, y)
+
+Dunder methods
+---------------
+Dunder or magic methods in Python are the methods having two prefix and suffix underscores
+in the method name. Dunder here means “Double Under (Underscores)”
+in Python all the build in functions like len() or sum() and all the construct like for
+are build on objects having this special methods.
