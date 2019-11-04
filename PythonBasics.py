@@ -46,3 +46,16 @@ functions that do not have names are called lambda
 example:  lambda x,y : x + y
 to use it : (lambda x,y : x + y)(10,5)
 to name it : my_sum = lambda x,y : x + y
+
+Objects in python
+------------------
+A way to store some date and some actions related to it.
+
+class Student:
+    def __init__(self,arg1,arg2):   # self is the empty object
+        self.arg1 = x
+        self.arg2 = y
+    def methode1(self):   # function inside a class is called a Method
+        retrun x + y
+
+student_one = Student(x, y)
