@@ -66,3 +66,13 @@ Dunder or magic methods in Python are the methods having two prefix and suffix u
 in the method name. Dunder here means “Double Under (Underscores)”
 in Python all the build in functions like len() or sum() and all the construct like for
 are build on objects having this special methods.
+
+
+Inheritance in Python
+----------------------
+WorkingStudent object inherites from object Student:
+class WorkingStudent(Student):
+    def __init(self,arg1,arg2,arg3):
+        super().__init__(arg1,arg2)  # super() refers to parent class Student
+        self.arg3 = arg3
+the methode "methode1" is automatically inherites from Student class.
