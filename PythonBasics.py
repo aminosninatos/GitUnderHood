@@ -76,3 +76,8 @@ class WorkingStudent(Student):
         super().__init__(arg1,arg2)  # super() refers to parent class Student
         self.arg3 = arg3
 the methode "methode1" is automatically inherites from Student class.
+
+Input function in Python
+-------------------------
+n = input('Please enter a number')
+remember that input() function retuens a str not a number
