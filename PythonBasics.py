@@ -94,3 +94,13 @@ Context manager in Python
 in opening and closing files:
 with open('filename','rw') as file:
     file_content = file.read()
+
+
+Impoting in python
+-------------------
+we can use either ways:
+import module
+module.function()
+
+from module import function
+function()
