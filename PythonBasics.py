@@ -86,4 +86,11 @@ remember that input() function retuens a str not a number
 Use cases for sets in Python
 -----------------------------
 we use sets in python or convert a list to set using the set() function
-mostly to benifit from the intersection or uninon functions in sets.
+mostly to benifit from the intersection or union functions in sets.
+
+
+Context manager in Python
+--------------------------
+in opening and closing files:
+with open('filename','rw') as file:
+    file_content = file.read()
