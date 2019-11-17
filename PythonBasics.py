@@ -104,3 +104,12 @@ module.function()
 
 from module import function
 function()
+
+Using sqlite with python
+-------------------------
+import sqlite3
+connection = sqlite.connect('data.db')
+cursor = connection.cursor()
+cursor.excute('ur sql query')
+connection.commit()
+connection.close()
