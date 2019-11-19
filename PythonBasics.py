@@ -108,8 +108,18 @@ function()
 Using sqlite with python
 -------------------------
 import sqlite3
-connection = sqlite.connect('data.db')
+connection = sqlite3.connect('data.db')
 cursor = connection.cursor()
 cursor.excute('ur sql query')
 connection.commit()
+connection.close()
+
+
+Get all rows in sqlite3
+-----------------------
+import sqlite3
+connection = sqlite3.connect('data.db')
+cursor = connection.cursor()
+cursor.excute('select sql query')
+rows = cursor.fetchall()
 connection.close()
