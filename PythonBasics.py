@@ -123,3 +123,11 @@ cursor = connection.cursor()
 cursor.excute('select sql query')
 rows = cursor.fetchall()
 connection.close()
+
+
+Type hinting
+-------------
+When you define a function you can specify that it retuens nothing
+def function() -> None:
+     statmenets
+That makes programming easy for editors to detect.
