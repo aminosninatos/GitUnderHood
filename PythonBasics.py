@@ -131,3 +131,10 @@ When you define a function you can specify that it retuens nothing
 def function() -> None:
      statmenets
 That makes programming easy for editors to detect.
+
+
+Generators in Python
+--------------------
+A function that remembers the state its in between executions.
+we call the values using yield keyword, and we call the next value using
+the next() keyword.
