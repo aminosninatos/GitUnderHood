@@ -145,3 +145,11 @@ Mutable are object that we can change
 immutable are objects that you cannot change
 integers, floats, strings, tuples are immutable
 list,dictionaries are mutable
+
+
+Working with date & time
+--------------------------
+from datetime import datetime
+print(datetime.now()) -> not aware of your timezone
+from datetime import datetime,timezone
+print(datetime.now(timezone.utc))  -> aware of timezone
