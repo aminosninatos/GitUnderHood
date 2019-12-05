@@ -153,3 +153,11 @@ from datetime import datetime
 print(datetime.now()) -> not aware of your timezone
 from datetime import datetime,timezone
 print(datetime.now(timezone.utc))  -> aware of timezone
+
+
+Regular expressions in Python
+------------------------------
+"." means anything but not newlines
+"+" means one or more of
+"*" means zero or more of
+"?" means zero or one of
