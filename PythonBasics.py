@@ -161,3 +161,15 @@ Regular expressions in Python
 "+" means one or more of
 "*" means zero or more of
 "?" means zero or one of
+
+
+Logging in Python
+-----------------
+import Logging
+logger = logging.getlogger('test_logger')
+logger.info('this will not show up')
+logger.warning('this will show up')
+the level of debugging are DEBUG INFO WARNING ERROR CRITICAL
+we can set the level : logging.basicConfig(level=logging.DEBUG)
+to go to a file : logging.basicConfig(level=logging.INFO,filename='log.txt')
+to format datetime values : logging.basicConfig(level=logging.INFO,datefmt='%d-%m-%y %H:%M:%S')
