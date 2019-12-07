@@ -13,3 +13,16 @@ ich nahm -- akhadtou
 Fussmarsch -- machyan 3la al a9dam
 Die Übergabe -- yaoum a tasslim
 Die Zulassung -- al 9ouboul al jami3i
+Vorstellen -- you9adim li - You3arif
+Kommilitonen -- a zoumalaaa fi al jami3a
+sämtliche -- jami3
+Einrichtungen -- al mabani wa am ma3ahid
+Hörsaal -- 9a3at al mouhadaratt
+Dafür -- wa bihada
+Der Dekan -- 3amid al koulia
+ständig -- daiman - toujours
+Das Dekanat -- 3imadatt al koulia
+Die Mensa -- Mat3am al jami3a
+Das Gerichte -- al wajba al ghidaia + al mahkama
+Beilage -- wajba takmilia + Mou9abila
+angehender -- fi marhalat al ta3aloum
