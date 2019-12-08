@@ -26,3 +26,7 @@ Die Mensa -- Mat3am al jami3a
 Das Gerichte -- al wajba al ghidaia + al mahkama
 Beilage -- wajba takmilia + Mou9abila
 angehender -- fi marhalat al ta3aloum
+Berichtet -- youkhbir + you3ti ta9rir
+1 Jahr = 2 Semestern
+Rechtzeitig -- fi al wa9ti al mouhadad
+ 
