@@ -173,3 +173,11 @@ the level of debugging are DEBUG INFO WARNING ERROR CRITICAL
 we can set the level : logging.basicConfig(level=logging.DEBUG)
 to go to a file : logging.basicConfig(level=logging.INFO,filename='log.txt')
 to format datetime values : logging.basicConfig(level=logging.INFO,datefmt='%d-%m-%y %H:%M:%S')
+
+
+HTML web scraping in Python
+---------------------------
+from bs4 import beautifulsoup
+my_html = 'html code here'
+my_bs = BeautifulSoup(my_html,'html.parser')
+print(my_bs.find('html_tag').string)
