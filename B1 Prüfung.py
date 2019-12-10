@@ -31,7 +31,7 @@ Berichtet -- youkhbir + you3ti ta9rir
 Rechtzeitig -- fi al wa9ti al mouhadad
 ----------------------------------------
 Brief -- Rissala
-Der Absender -- sender
+Der Absender -- sender - al mourssil
 PLZ (PostLeitZahl) -- (Postal Code 40000 )
 Postfach -- (P.O Box)
- 
+Der Empfänger -- the receiver - al mousta9bil
