@@ -181,3 +181,9 @@ from bs4 import beautifulsoup
 my_html = 'html code here'
 my_bs = BeautifulSoup(my_html,'html.parser')
 print(my_bs.find('html_tag').string)
+we can also access our element using parent, child hirachy using CSS locator:
+locator = 'parent_tag.class_name child1 child2'
+to get the string of the tag :
+item = my_bs.select_one(locator).string
+if the item has attributes and to get the value of item attribute:
+item = my_bs.select_one(locator).attrs['attribute_name']
