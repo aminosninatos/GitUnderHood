@@ -35,3 +35,9 @@ Der Absender -- sender - al mourssil
 PLZ (PostLeitZahl) -- (Postal Code 40000 )
 Postfach -- (P.O Box)
 Der Empfänger -- the receiver - al mousta9bil
+Sehr geehrte Damen und Herren, -- ayatouha a sayidate wa sada al mouhtaramoun
+Sehr geehrtE Fau Martina - Sehr geehrteR Herr Schmidt
+Liebe Freundinnen -- ayatouha a sadi9at al ahibaaa
+Liebe Schülerinnen -- ayatouha a tilmidat al a3izaaa
+Liebe Kolleginnen und Kollegen-- ayatouha a zamilatt wa zoumalaa al a3izaaa
+ 
