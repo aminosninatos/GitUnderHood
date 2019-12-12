@@ -40,4 +40,11 @@ Sehr geehrtE Fau Martina - Sehr geehrteR Herr Schmidt
 Liebe Freundinnen -- ayatouha a sadi9at al ahibaaa
 Liebe Schülerinnen -- ayatouha a tilmidat al a3izaaa
 Liebe Kolleginnen und Kollegen-- ayatouha a zamilatt wa zoumalaa al a3izaaa
+ Beschreiben -- sif ( describe )
+ Begründen -- a3ti assbab manti9aya
+ Einleitung -- introduction
+ Reihenfolge -- a tartib
+ Schluss -- al khatima
+ Entschlossen -- akhadtou 9arar
+ Fotos geschossen -- ilti9at souwar
  
