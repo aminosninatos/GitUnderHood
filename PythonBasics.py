@@ -187,3 +187,7 @@ to get the string of the tag :
 item = my_bs.select_one(locator).string
 if the item has attributes and to get the value of item attribute:
 item = my_bs.select_one(locator).attrs['attribute_name']
+we can use the request module to get website content:
+import requests
+page = requests.get('http://www.example.com')
+print(page.content)
