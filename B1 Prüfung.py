@@ -47,4 +47,17 @@ Liebe Kolleginnen und Kollegen-- ayatouha a zamilatt wa zoumalaa al a3izaaa
  Schluss -- al khatima
  Entschlossen -- akhadtou 9arar
  Fotos geschossen -- ilti9at souwar
- 
+Modelltest B1
+---------------
+Vorgenommen -- 9arartou an
+Nämlich -- haytou ana - 3alaya ana
+Ansonsten -- fima 3ada dalik
+Gezogen -- inta9alt(i)
+Eisdiele -- mahlabat al bouda(Eis)
+Zugenommen -- izdad al wazne
+Verzichten -- okhafif min - atanazal 3an
+Übrigens -- 3ala fikra
+Niedlich -- cute
+Verspielt -- youhibou ala3ib
+Verbringen -- ya9di al wa9t
+Demnächst -- fi al wa9ti al 9aadim (next time)
