@@ -61,3 +61,19 @@ Niedlich -- cute
 Verspielt -- youhibou ala3ib
 Verbringen -- ya9di al wa9t
 Demnächst -- fi al wa9ti al 9aadim (next time)
+Anschliessend -- Fi khitam dalik
+jeweils -- fi kouli wahda minhoum
+Statuen -- tamatil
+Münzen -- 9ika3 na9dia
+Militärische Ausrüstung -- tajhizatt 3askaria
+Bestaunen -- li douhoul - lil  i3jab
+Damit -- bi hada
+Reich -- imbratouria
+Errichteten -- Assassou (construct) - banaw
+Beherrschten -- yahkoum
+Zauber -- sihar
+Begeistert -- masrourin
+Führung -- Al jawla
+Ausgestellt -- ma3roudan (displayed)
+Panzer -- dababat
+Bezaubernd -- sahiratoun
