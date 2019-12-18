@@ -77,3 +77,4 @@ Führung -- Al jawla
 Ausgestellt -- ma3roudan (displayed)
 Panzer -- dababat
 Bezaubernd -- sahiratoun
+Anzeigen -- I3lanat
