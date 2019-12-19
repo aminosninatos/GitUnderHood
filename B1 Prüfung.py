@@ -78,3 +78,10 @@ Ausgestellt -- ma3roudan (displayed)
 Panzer -- dababat
 Bezaubernd -- sahiratoun
 Anzeigen -- I3lanat
+Bestimmten -- mou3ayana (particular)
+Glied -- Al atraff (body members)
+Wolkenkratzer -- natihat a sahab
+Gehoben -- ra9i (luxurious)
+Stäbch -- 3oud
+Einkaufsmeile -- chari3 a tasawa9
+Aufgepasst -- intibah (Achtung)
