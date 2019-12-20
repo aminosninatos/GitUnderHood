@@ -85,3 +85,11 @@ Gehoben -- ra9i (luxurious)
 Stäbch -- 3oud
 Einkaufsmeile -- chari3 a tasawa9
 Aufgepasst -- intibah (Achtung)
+Da -- haytou ana
+Berufspendler(in) -- fait la navette pour travailler
+Matrose -- Bahar (sailor)
+Bereisen -- a safar b hadafin mouhadad
+Zwar -- b roughmi mina
+Bundeswehr -- german army
+Den Frieden zu bewahren -- al mouhafada 3ala salam
+Gewässer -- anhar - bouhairatt - bouhour
