@@ -20,4 +20,11 @@ we can use the notatiion: .class_name element_name {}.
 - If we can to position an element relative to a parent, we can define the position
 property of the parent as relative: parent_name{position : relative;} and then
 the position of the child as absolute: child_name{position:absolute;}.
- 
+
+Css box Model
+---------------
+- All html element can be represented as boxes.
+- margin: space between boxes.
+- padding: transparent area around the content.
+- content: text, image...
+- border: goes around the padding.
