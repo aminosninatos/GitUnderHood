@@ -28,3 +28,11 @@ Css box Model
 - padding: transparent area around the content.
 - content: text, image...
 - border: goes around the padding.
+
+Css subclasses
+---------------
+We can use subclasses in css, for example for links:
+.class_name a:link{css properties} or .class_name a:hover{css properties}
+We can even use mutiple classes at the same time:
+.class_name a:link,
+.class_name a:hover{ css properties}
