@@ -14,7 +14,7 @@ get more system info about docker
 #docker
 to get docker commands
 
-# docker container run --publish 8080:80 --detach --name ohyeah nginx
+#docker container run --publish 8080:80 --detach --name ohyeah nginx
 will download the image nginx and run an instance (container)
 --publish will map local port 8080 to container port 80
 --detach will run the container in background
@@ -35,5 +35,11 @@ will show the process running inside the container
 #docker container stop container_id
 will stop the container
 
+#docker container top container_id
+will show process list in the container
 
+#docker container stats container_id
+will show performance stats of the container
 
+#docker container inspect container_id
+will show details of the container config
