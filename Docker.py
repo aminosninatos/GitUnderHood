@@ -43,3 +43,9 @@ will show performance stats of the container
 
 #docker container inspect container_id
 will show details of the container config
+
+#docker container run -it imgae
+will start a NEW container interactively(t:tty i:interactive)
+
+#docker container exec -it imgae
+will start a RUN additionnal commands to an EXISTING container
