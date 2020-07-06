@@ -47,5 +47,5 @@ will show details of the container config
 #docker container run -it imgae
 will start a NEW container interactively(t:tty i:interactive)
 
-#docker container exec -it imgae
+#docker container exec -it container_id
 will start a RUN additionnal commands to an EXISTING container
