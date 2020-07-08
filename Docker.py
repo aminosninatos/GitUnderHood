@@ -66,4 +66,7 @@ will create a network
 will attach a container to a network
 
 #docker network disconnect network_name container_name
-will disconnect a container from  a network
+will disconnect a container from  a
+
+#docker container run --rm image
+once its done running, erase everything related to it and save the disk space
