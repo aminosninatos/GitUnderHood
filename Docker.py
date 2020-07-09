@@ -70,3 +70,11 @@ will disconnect a container from  a
 
 #docker container run --rm image
 once its done running, erase everything related to it and save the disk space
+
+#docker history image
+will show how image is made of which means different layers of the image.
+
+#docker image inspect image_name
+will show the metadaata of an image.
+
+
