@@ -77,4 +77,8 @@ will show how image is made of which means different layers of the image.
 #docker image inspect image_name
 will show the metadaata of an image.
 
+#docker image build -t image_name .
+will build an image provided the Dockerfile is in the current directory
+
+
 
