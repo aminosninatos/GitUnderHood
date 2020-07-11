@@ -89,4 +89,8 @@ will inspect a specific volume.
 #docker container run --name image_name -v volume_name:directory image
 will created a named volume for the image.
 
+#docker container run --name image_name -v directory_host:directory_container image
+will map a directory in the host in a directory in the container
+
+
 
