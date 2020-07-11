@@ -80,5 +80,13 @@ will show the metadaata of an image.
 #docker image build -t image_name .
 will build an image provided the Dockerfile is in the current directory
 
+#docker volume ls 
+will show the list of volumes.
+
+#docker volume inspect volume_name
+will inspect a specific volume.
+
+#docker container run --name image_name -v volume_name:directory image
+will created a named volume for the image.
 
 
