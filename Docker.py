@@ -92,5 +92,40 @@ will created a named volume for the image.
 #docker container run --name image_name -v directory_host:directory_container image
 will map a directory in the host in a directory in the container
 
+#docker swarm init
+will initialize swarm and created tokens and certificates
+
+#docker node ls 
+will show the list of nodes.
+
+#docker service create 
+replace docker run command in swarm world.
+
+#docker service ls 
+will show the list of services.
+
+#docker update 
+will update the config of one or more containers(CPU, RAM ... )
+
+#docker service update service_id options 
+will update the config of a service in swarm.
+
+#docker swarm join --tocken xxxxxxxxxxxxxxx 
+to add a worker to the swarm initiated.
+
+#docker node update --role manager node2
+to promote node2 from a worker to be a manager
+
+#docker node ps node2
+to show containers running in node2
+
+#docker service create --replicas 3 alpine ping 8.8.8.8 
+will create 3 replicas of alpine each in every nodes that you have.
+
+
+
+
+
+
 
 
