@@ -47,6 +47,39 @@ SMART commands
 - Get info about HD : > smartctl -i /dev/sdx
 - Get Genaral Health : > smartctl -H /dev/sdx
 - Short test can be done : > smartctl -t short /dev/dsx
+in order to use smartctl you must install smartmontools package.
+
+CHECK INTERFACE TRAFFIC
+------------------------
+install nload package then run : > nload
+
+CHECK HDD TEMP
+------------------------
+install hddtemp package then run : > hddtemp /dev/sdx
+
+CHECK CPU MEM SERVICES
+------------------------
+install htop package then run : > htop 
+
+YUM COMMANDS 
+--------------
+> yum repolist
+> yum history
+> yum history info id_num
+> yum history undo id_num
+> cat /var/log/yum.log 
+> cat /etc/yum.repo.d/xxx.repo 
+
+
+CHECK DISK PARTITION
+------------------------
+> lsblk
+
+CHECK LVM
+------------------------
+> pvdisplay
+> vgdisplay
+> lvdisplay 
 
 
 
