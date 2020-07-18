@@ -81,6 +81,18 @@ CHECK LVM
 > vgdisplay
 > lvdisplay 
 
+CHECK SERVICES USING SYSTEMD 
+---------------------------------------------------------
+> systemctl --state=running : check running services
+> systemctl status servcice_name : check a service status 
+> systemctl start servcice_name : start a service
+> systemctl enable servcice_name : start a service at boot
+> systemctl restart servcice_name : stop & start a service
+> systemctl --failed : check failed services 
+
+
+
+
 
 
 
