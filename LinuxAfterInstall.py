@@ -90,8 +90,11 @@ CHECK SERVICES USING SYSTEMD
 > systemctl restart servcice_name : stop & start a service
 > systemctl --failed : check failed services 
 
-
-
+SHUTDOWN THE SYSTEM
+--------------------
+> systemctl poweroff : to shutdown the system
+> systemctl reboot : to reboot the system
+> systemctl suspend  : to suspend the system
 
 
 
