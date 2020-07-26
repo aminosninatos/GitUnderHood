@@ -106,8 +106,9 @@ transmission-daemon --dump-settings  : to view the configguration.
 > transmission-remote -l : to view status of downloads.
 > transmission-remote -t id-torrent --remove : to remove a torrent.
 > transmission-remote -t id-torrent --info : to view info of a torrent.
-
-
+> transmission-remote -t id-torrent --files : to view all files of a torrent.
+> transmission-remote -t id-torrent --stop : to stop a torrent.
+> transmission-remote -t id-torrent --start : to start a torrent.
 
 
 
