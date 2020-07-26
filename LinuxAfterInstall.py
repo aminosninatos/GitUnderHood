@@ -96,6 +96,22 @@ SHUTDOWN THE SYSTEM
 > systemctl reboot : to reboot the system
 > systemctl suspend  : to suspend the system
 
+TRANSMISSION TORRENT CLIENT
+----------------------------
+> transmission-daemon   : to start working with it.
+> transmission-daemon --download-dir   : location of downloads.
+transmission-daemon --dump-settings  : to view the configguration.
+
+> transmission-remote -a 'magnet-link'  : to add a torrent file.
+> transmission-remote -l : to view status of downloads.
+> transmission-remote -t id-torrent --remove : to remove a torrent.
+> transmission-remote -t id-torrent --info : to view info of a torrent.
+
+
+
+
+
+
 
 
 
