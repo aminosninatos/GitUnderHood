@@ -110,6 +110,22 @@ transmission-daemon --dump-settings  : to view the configguration.
 > transmission-remote -t id-torrent --stop : to stop a torrent.
 > transmission-remote -t id-torrent --start : to start a torrent.
 
+DNF COMMANDS
+------------
+/etc­/dn­f/d­nf.c­onf DNF config­uration file
+/etc­/yu­m.r­epo­s.d all repo files
+
+> dnf repolist all : list all repositories.
+> dnf list installed : list all installed packages.
+> dnf search term : search for term in package name and summary
+> dnf install <package> : install a specific package.
+> dnf remove <package> : remove a specific package.
+> dnf check-update : check for updates across all enabled repositories. It does not install the updates.
+> dnf upgrade --refresh : update all packages.
+> dnf update <package> : update a specific package.
+> dnf info <package>
+
+
 
 
 
