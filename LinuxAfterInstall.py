@@ -125,6 +125,34 @@ DNF COMMANDS
 > dnf update <package> : update a specific package.
 > dnf info <package>
 
+LVM CHEAT SHEET
+----------------
+> pvcreate /dev/sda1 /dev/sdb1    : creates a physical volume.
+> vgcreate vg_apps /dev/sda1 /dev/sdb1   : creates a volume group.
+> lvcreate -L 108G -n lv_apps vg_apps  : creates a logical volume with a specific size.
+> mkfs.ext4 /dev/vg_apps/lv_apps  : creates the filesystem.
+ 
+>  pvdisplay pvs vgdisplay vgs lvdisplay lvs : commands to see details about lvm.
+
+> vgextend vg_apps /dev/sdj1 : Extends VG with a new Disk (after pvcreate command has been run the disk: pvcreate /dev/sdj1)
+> lvextend -L +100G /dev/mapper/vg_apps-lv_apps : Extends LV by 100GB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
