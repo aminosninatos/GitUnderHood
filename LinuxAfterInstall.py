@@ -134,9 +134,10 @@ LVM CHEAT SHEET
  
 >  pvdisplay pvs vgdisplay vgs lvdisplay lvs : commands to see details about lvm.
 
-> vgextend vg_apps /dev/sdj1 : Extends VG with a new Disk (after pvcreate command has been run the disk: pvcreate /dev/sdj1)
+> vgextend vg_apps /dev/sdj1 : Extends VG with a new Disk (after pvcreate command has been run the disk: pvcreate /dev/sdj1).
 > lvextend -L +100G /dev/mapper/vg_apps-lv_apps : Extends LV by 100GB
-
+Note : if you need to extend a logical volume, you must make sure that you have enough free space available in the volume group. 
+you can see the free space available by using vgs or vgdisplay commmands.
 
 
 
