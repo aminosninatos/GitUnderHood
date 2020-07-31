@@ -153,8 +153,22 @@ without a trailing slash "/" to the source, it will copy also the folder name an
 -h : to get a human readable output.
 --dry-run : to run only a simulation of the operation.
 
+BACKUP USING BORG
+------------------
+> borg init --encryption=repokey /path/to/backup_repo  : creates a backup repo.
+> borg create /path/to/backup_repo::archive1 /path/to/source_directory : creates a backup.
 
+> borg list /path/to/backup_repo : to list all backups.
+> borg list /path/to/backup_repo::archive1 : to list the content of a specific backup.
+> borg info /path/to/backup_repo::archive1 : to get info about a specific backup.
 
+> borg extract /path/to/backup_repo::archive1  : to extract a backup to the current directory.
+> borg mount path/to/backup_repo::archive1 /mnt  : to mount a backup to the directory mnt.
+
+Note: you can add the options --progress --info --stats to > borg create 
+you can also add --compression zlib,9 :  to compress files.
+--list : to list the files being backuped up.
+borg create --remote-path /usr/local/bin/borg  user@server-ip:/path/to/backup_repo /path/to/source_directory
 
 
 
