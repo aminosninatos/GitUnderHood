@@ -139,6 +139,19 @@ LVM CHEAT SHEET
 Note : if you need to extend a logical volume, you must make sure that you have enough free space available in the volume group. 
 you can see the free space available by using vgs or vgdisplay commmands.
 
+BACKUP USING RSYNC
+------------------
+> rsync -avzh --progress --stats source-path destination-path  : general syntax
+> rsync -avzh local_source_dir username@remote_host:/destination_dir : to copy to a remote host.
+
+Note : if you add a trailing slash "/" to the source, it will only copy the content of the folder.
+without a trailing slash "/" to the source, it will copy also the folder name and its content. 
+
+-a : archive mode will sustain symbolic links, special and device files, modification times, group, owner and permissions
+-v : verbose 
+-z : When transferring across the network rsync provides a compression option to save on bandwidth.
+-h : to get a human readable output.
+--dry-run : to run only a simulation of the operation.
 
 
 
