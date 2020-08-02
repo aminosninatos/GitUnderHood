@@ -170,7 +170,12 @@ you can also add --compression zlib,9 :  to compress files.
 --list : to list the files being backuped up.
 borg create --remote-path /usr/local/bin/borg  user@server-ip:/path/to/backup_repo /path/to/source_directory
 
-
+DMIDECODE
+----------
+> dmidecode -t baseboard  : get hardware info about the baseboard.
+> dmidecode -t 17  : Displays Information of about Installed Physical Memory and DIMMs.
+> dmidecode -t 16 : Displays the maximum physical memory supported by your system.
+> dmidecode -t processor or dmidecode -t 4 : Display the hardware information of processor or CPU sockets.
 
 
 
