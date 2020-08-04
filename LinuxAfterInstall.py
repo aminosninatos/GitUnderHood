@@ -177,6 +177,11 @@ DMIDECODE
 > dmidecode -t 16 : Displays the maximum physical memory supported by your system.
 > dmidecode -t processor or dmidecode -t 4 : Display the hardware information of processor or CPU sockets.
 
+DISK SPEED TEST
+----------------
+> dd if=/dev/zero of=/dev/null && sync   : stop the command using Ctrl+C then you get read speed 
+> dd if=/dev/zero of=benchfile bs=4k count=200000 && sync; rm benchfile  : to get write speed.
+
 
 
 
