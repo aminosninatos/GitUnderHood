@@ -182,6 +182,14 @@ DISK SPEED TEST
 > dd if=/dev/zero of=/dev/null && sync   : stop the command using Ctrl+C then you get read speed 
 > dd if=/dev/zero of=benchfile bs=4k count=200000 && sync; rm benchfile  : to get write speed.
 
+eCRYPTFS
+--------
+to encrypt a folder in Linux :
+> dnf install ecryptfs-utils
+> mount -t ecryptfs Dir/ Dir/
+when you are done putting files in Dir you should : > umount Dir/
+
+
 
 
 
