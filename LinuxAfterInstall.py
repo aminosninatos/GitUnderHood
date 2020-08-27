@@ -189,6 +189,23 @@ to encrypt a folder in Linux :
 > mount -t ecryptfs Dir/ Dir/
 when you are done putting files in Dir you should : > umount Dir/
 
+ENCRYPT A PARTITION
+--------------------
+> yum install cryptsetup
+> cryptsetup luksFormat /dev/sdx
+> cryptsetup luksOpen /dev/sdx encrypted-partition
+> mkfs.ext4 /dev/mapper/encrypted-partition
+> mount /dev/mapper/encrypted-partition ~/encrypted-storage
+Put the files you want to encrypt in ~/encrypted-storage
+> umount /dev/mapper/encrypted-partition
+> cryptsetup luksClose /dev/mapper/encrypted-partition
+Next time to get access to your encrypted files, open the partition using cryptsetup luksOpen and mount it.
+
+
+
+
+
+
 
 
 
