@@ -90,11 +90,10 @@ Resetting offsets
 To reset offsets:
 > kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-app --reset-offsets --to-earliest --execute --topic topic-name
 
+Starting zookeeper
+-------------------
+> zookeeper-server-start.bat .\config\zookeeper.properties
 
-
-
-
-
-
-
-
+Starting kafka
+-----------------
+>  kafka-server-start.bat .\config\server.properties
