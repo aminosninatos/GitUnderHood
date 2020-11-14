@@ -105,3 +105,8 @@ Simplify transforming data within kafka without relying on external libs.
 Source connectors : to get data from common data sources.
 Sink connectors : to publish data in common data stores.
 most of the time we use connectors from Confluent.
+
+Kafka Streams
+--------------
+Easy data processing and transformaton library within Kafka.
+It gets data from kafka and put it back to kafka.
