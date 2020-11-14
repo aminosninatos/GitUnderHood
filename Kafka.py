@@ -110,3 +110,10 @@ Kafka Streams
 --------------
 Easy data processing and transformaton library within Kafka.
 It gets data from kafka and put it back to kafka.
+
+Schema Registry
+-----------------
+Kafka takes bytes as input and publishes them with No data verification.
+if we kafka gets bad data the consumer will break.
+Schema Registry must be able to talk to consumers and Producers and reject bad data.
+Confluent creates the Confluent Schema Registry.
