@@ -97,3 +97,11 @@ Starting zookeeper
 Starting kafka
 -----------------
 >  kafka-server-start.bat .\config\server.properties
+
+Kafka connect API
+--------------------
+Simplify and improve getting data in and out of kafka.
+Simplify transforming data within kafka without relying on external libs.
+Source connectors : to get data from common data sources.
+Sink connectors : to publish data in common data stores.
+most of the time we use connectors from Confluent.
