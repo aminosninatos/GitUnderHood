@@ -124,3 +124,16 @@ Source ==> kafka (Producer API)  : Kafka connect source.
 Kafka ==> kafka  (Producer API, Consumer API)  : Kafka streams.
 Kafka ==> Sink  (Consumer API)  : Kafka connect sink.
 Kafka connect simplify & improve getting data in and out of Kafka.
+
+Kafka connect
+--------------
+Source connectors to get data from common data sources.
+Sink connectors to publish data in common data stores.
+
+Kafka connect cluster has multiple loaded connectors.
+Each connector is a re-usable piece of code(java jar).
+
+Task ==> Connectors + User configuration.
+
+Workers ==> Tasks are executed by kafka Connect Workers.
+Worker is a single java process.
