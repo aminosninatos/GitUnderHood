@@ -137,3 +137,8 @@ Task ==> Connectors + User configuration.
 
 Workers ==> Tasks are executed by kafka Connect Workers.
 Worker is a single java process.
+
+Kafka Connect Workers modes
+----------------------------
+Standalone : A single process runs your connectors & tasks(Not fault tolerant).
+Distributed : multiple workers run your connectors & tasks and config is submited by REST API.
