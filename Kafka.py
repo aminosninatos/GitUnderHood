@@ -117,3 +117,10 @@ Kafka takes bytes as input and publishes them with No data verification.
 if we kafka gets bad data the consumer will break.
 Schema Registry must be able to talk to consumers and Producers and reject bad data.
 Confluent creates the Confluent Schema Registry.
+
+Kafka Connect, Streams & Sink
+-------------------------------
+Source ==> kafka (Producer API)  : Kafka connect source.
+Kafka ==> kafka  (Producer API, Consumer API)  : Kafka streams.
+Kafka ==> Sink  (Consumer API)  : Kafka connect sink.
+Kafka connect simplify & improve getting data in and out of Kafka.
