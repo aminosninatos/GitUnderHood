@@ -29,3 +29,10 @@ shows the whole system configuration.
 # get firewall policy
 # show firewall policy
 shows the firewall policy.
+
+# exe ping x.x.x.x
+to execute a ping.
+# exe ping-options
+to view all available options.
+# exe ping-options option_name value
+to set a ping option.
