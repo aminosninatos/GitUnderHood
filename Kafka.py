@@ -90,11 +90,55 @@ Resetting offsets
 To reset offsets:
 > kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-app --reset-offsets --to-earliest --execute --topic topic-name
 
+Starting zookeeper
+-------------------
+> zookeeper-server-start.bat .\config\zookeeper.properties
 
+Starting kafka
+-----------------
+>  kafka-server-start.bat .\config\server.properties
 
+Kafka connect API
+--------------------
+Simplify and improve getting data in and out of kafka.
+Simplify transforming data within kafka without relying on external libs.
+Source connectors : to get data from common data sources.
+Sink connectors : to publish data in common data stores.
+most of the time we use connectors from Confluent.
 
+Kafka Streams
+--------------
+Easy data processing and transformaton library within Kafka.
+It gets data from kafka and put it back to kafka.
 
+Schema Registry
+-----------------
+Kafka takes bytes as input and publishes them with No data verification.
+if we kafka gets bad data the consumer will break.
+Schema Registry must be able to talk to consumers and Producers and reject bad data.
+Confluent creates the Confluent Schema Registry.
 
+Kafka Connect, Streams & Sink
+-------------------------------
+Source ==> kafka (Producer API)  : Kafka connect source.
+Kafka ==> kafka  (Producer API, Consumer API)  : Kafka streams.
+Kafka ==> Sink  (Consumer API)  : Kafka connect sink.
+Kafka connect simplify & improve getting data in and out of Kafka.
 
+Kafka connect
+--------------
+Source connectors to get data from common data sources.
+Sink connectors to publish data in common data stores.
 
+Kafka connect cluster has multiple loaded connectors.
+Each connector is a re-usable piece of code(java jar).
 
+Task ==> Connectors + User configuration.
+
+Workers ==> Tasks are executed by kafka Connect Workers.
+Worker is a single java process.
+
+Kafka Connect Workers modes
+----------------------------
+Standalone : A single process runs your connectors & tasks(Not fault tolerant).
+Distributed : multiple workers run your connectors & tasks and config is submited by REST API.
