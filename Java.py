@@ -26,3 +26,9 @@ Polymorphism
 Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
 Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform
 different tasks. This allows us to perform a single action in different ways.
+
+Abstarct class
+--------------
+A class that is declared using “abstract” keyword is known as abstract class. It can have abstract methods(methods without
+body) as well as concrete methods (regular methods with body).
+An abstract class can not be instantiated, which means you are not allowed to create an object of it.
