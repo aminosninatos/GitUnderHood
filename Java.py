@@ -20,3 +20,9 @@ Encapsulation
 Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods)
 together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and
 can be accessed only through the methods of their current class.
+
+Polymorphism
+------------
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform
+different tasks. This allows us to perform a single action in different ways.
