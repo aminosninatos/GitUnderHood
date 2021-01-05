@@ -32,3 +32,11 @@ Abstarct class
 A class that is declared using “abstract” keyword is known as abstract class. It can have abstract methods(methods without
 body) as well as concrete methods (regular methods with body).
 An abstract class can not be instantiated, which means you are not allowed to create an object of it.
+
+Interface
+----------
+An interface is a completely "abstract class" that is used to group related methods with empty bodies.
+To access the interface methods, the interface must be "implemented" (kinda like inherited) by another
+class with the implements keyword (instead of extends).
+Like abstract classes, interfaces cannot be used to create objects (in the example above, it is not possible
+to create an "Animal" object in the MyMainClass)
