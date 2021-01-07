@@ -48,3 +48,9 @@ Java Collections can achieve all the operations that you perform on a data such 
 manipulation, and deletion.
 Java Collection means a single unit of objects. Java Collection framework provides many interfaces (Set, List,
 Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet).
+
+HashMap
+--------
+HashMap is a Map based collection class that is used for storing Key & value pairs, it is denoted as HashMap<Key, Value>
+It is not an ordered collection which means it does not return the keys and values in
+the same order in which they have been inserted.It does not sort the stored keys and Values.
