@@ -54,3 +54,9 @@ HashMap
 HashMap is a Map based collection class that is used for storing Key & value pairs, it is denoted as HashMap<Key, Value>
 It is not an ordered collection which means it does not return the keys and values in
 the same order in which they have been inserted.It does not sort the stored keys and Values.
+
+HashMap, LinkedHashMap and TreeMap
+----------------------------------
+HashMap makes absolutely no guarantees about the iteration order.
+TreeMap will iterate according to the "natural ordering" of the keys.
+LinkedHashMap will iterate in the order in which the entries were put into the map. 
