@@ -40,3 +40,23 @@ To access the interface methods, the interface must be "implemented" (kinda like
 class with the implements keyword (instead of extends).
 Like abstract classes, interfaces cannot be used to create objects (in the example above, it is not possible
 to create an "Animal" object in the MyMainClass)
+
+Collections
+-----------
+The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.
+Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion,
+manipulation, and deletion.
+Java Collection means a single unit of objects. Java Collection framework provides many interfaces (Set, List,
+Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet).
+
+HashMap
+--------
+HashMap is a Map based collection class that is used for storing Key & value pairs, it is denoted as HashMap<Key, Value>
+It is not an ordered collection which means it does not return the keys and values in
+the same order in which they have been inserted.It does not sort the stored keys and Values.
+
+HashMap, LinkedHashMap and TreeMap
+----------------------------------
+HashMap makes absolutely no guarantees about the iteration order.
+TreeMap will iterate according to the "natural ordering" of the keys.
+LinkedHashMap will iterate in the order in which the entries were put into the map. 
