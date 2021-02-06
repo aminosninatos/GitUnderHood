@@ -41,7 +41,9 @@ Custom box
 $ vagrant package custombox
 to create a custom box from an existing environment.
 
-
+Removing a vm
+--------------
+$ VBoxManage unregistervm <uuid>|<name> [--delete]
 
 
 
