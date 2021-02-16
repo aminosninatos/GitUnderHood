@@ -21,7 +21,7 @@ a single playbook that acts as entry point.
 
 Ansible configuration
 ----------------------
-Ansible supports several sources for configuring its behavior, including an ini 
+Ansible supports several sources for configuring its behavior, including an ini
 file named ansible.cfg
 Changes can be made and used in a configuration file which will be searched for in
 the following order:
@@ -49,20 +49,30 @@ $ ansible-playbook myplaybook.yml --list-hosts
 Ansible modules
 ----------------
 Ansible modules are standalone scripts that can be used on remote servers.
-$ ansible-doc -l 
+$ ansible-doc -l
 to list all available modules.
 
-$ ansible all -m setup 
+$ ansible all -m setup
 to gather servers facts.
 
-$ ansible all -m apt -a "name=nginx state=present" --sudo 
+$ ansible all -m apt -a "name=nginx state=present" --sudo
 to install the nginx package on debian based systems.
 
-$ ansible all -m service -a "name=mysql state=started" --sudo 
+$ ansible all -m service -a "name=mysql state=started" --sudo
 to start the service mysqld in Linux systems.
 
-$ ansible all -m win_features -a "name=Web-Server state=present"  
+$ ansible all -m win_features -a "name=Web-Server state=present"
 to install IIS in Windows systems.
 
-$ ansible all -m win_service -a "name=spooler state=started"  
+$ ansible all -m win_service -a "name=spooler state=started"
 to start the Spooler service in Windows systems.
+
+Add a loop in a Playbook
+-------------------------
+- tasks:
+   - name:  install packages using apt module
+     apt: name={{item}} state=installed force=yes
+     with_items:
+      - package1
+      - package2
+      - package3
