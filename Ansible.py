@@ -76,3 +76,13 @@ Add a loop in a Playbook
       - package1
       - package2
       - package3
+
+Creating Roles
+----------------
+to create the role directory structure we use the command:
+$ ansible-galaxy init role_name
+the you have to add the section roles in your playbook:
+roles:
+ - role_name1
+ - role_name2
+ - ....
