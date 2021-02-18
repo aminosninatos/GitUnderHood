@@ -86,3 +86,10 @@ roles:
  - role_name1
  - role_name2
  - ....
+
+Asynchronous actions
+---------------------
+We use the following directves
+async: to specify how long to run the task in seconds.
+poll: how frequent to check the task, the default is 10s.
+to execute two tasks simultaniously we putt poll:0.
