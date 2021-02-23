@@ -76,3 +76,28 @@ Add a loop in a Playbook
       - package1
       - package2
       - package3
+
+Creating Roles
+----------------
+to create the role directory structure we use the command:
+$ ansible-galaxy init role_name
+the you have to add the section roles in your playbook:
+roles:
+ - role_name1
+ - role_name2
+ - ....
+
+Asynchronous actions
+---------------------
+We use the following directves
+async: to specify how long to run the task in seconds.
+poll: how frequent to check the task, the default is 10s.
+to execute two tasks simultaniously we putt poll:0.
+
+Strategy
+---------
+Controls how ansible run tasks across multiple nodes.
+by defaults the stategy is linear.
+Linear: the first task is executed in all servers then when its finished Ansible
+goes to execute the second task on all nodes and etc.
+Free: all the tasks are executed on each server whether or not it has finished on others.
