@@ -56,3 +56,18 @@ to set a limit for a memory for a container.
 
 $ lxc config set container_name limits.cpu 1
 to set a limit for cpus for a container.
+
+$ lxc storage list
+to list all storage pools available.
+
+$ lxc storage create storage2 dir
+to create a new storage pool with driver dir.
+
+$ lxc storage create storage3 zfs source=/dev/sdb
+to create a new storage pool with driver zfs.
+
+$ lxc launch image container_name --storage storage2
+to launch a container in the new created stoage.
+
+$ lxc list -c ns46tSb
+to list all containers with specific columns.
