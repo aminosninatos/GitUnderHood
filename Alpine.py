@@ -5,7 +5,10 @@ Alpine
 is the default shell
 
 # apk update
-to update the repos in Alpine
+to update the package in Alpine
+
+# apk upgrade
+to upgrade the package in Alpine
 
 # apk add nginx
 to install nginx in Alpine
