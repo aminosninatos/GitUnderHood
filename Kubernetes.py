@@ -98,3 +98,22 @@ to get info about it:
 to scale it:
 > kubectl replace -f replicaset-definition.yaml
 > kubectl scale --replicas=6 -f replicaset-definition.yml
+
+Sample namespace yaml file
+---------------------------
+apiVersion: v1
+kind: Namespace
+metadata:
+        name: dev
+----------------------------
+to create a namespace:
+> kubectl create -f namespace-definition.yaml
+or
+> kubectl create namespace dev
+to get pods for a namespace:
+> kubectl get pods --namespace=dev
+to view pods in all namespaces
+> kubectl get pods --all-namespaces
+by default 3 namespaces are created : kube-system, default and kube-public.
+to set a default namespace:
+> kubectl config set-context $(kubectl config current-context) --namespace=dev
