@@ -117,3 +117,28 @@ to view pods in all namespaces
 by default 3 namespaces are created : kube-system, default and kube-public.
 to set a default namespace:
 > kubectl config set-context $(kubectl config current-context) --namespace=dev
+
+Services types
+----------------
+NodePort, ClusterIP and Loadbalancer
+
+Sample NodePort service yaml file
+---------------------------------------
+apiVersion: v1
+kind: Service
+metadata:
+        name: myapp-service
+spec:
+        type: NodePort
+        ports:
+                - targetPort: 80
+                  port: 80
+                  nodePort: 30008
+        selector:
+                app: myapp
+                type: front-end
+-----------------------------------------
+to run this service:
+> kubectl create -f service-definition.yml
+to see running services:
+> kubectl get services
