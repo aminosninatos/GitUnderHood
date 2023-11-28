@@ -1,7 +1,7 @@
 Clipboard
 -----------------------
 dw	delete word
-dd	delete line
+dd	delete line and also cut a line
 p	put after cursor
 P	put before cursor
 yw	copy word
